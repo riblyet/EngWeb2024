@@ -5,7 +5,6 @@ html = """
 <!DOCTYPE html>
 <html>
     <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
     <style>
         body {
@@ -15,7 +14,7 @@ html = """
         }
         
         .header {
-            background-color: purple;
+            background-color: SlateBlue;
             padding: 10px;
             text-align: center;
         }
