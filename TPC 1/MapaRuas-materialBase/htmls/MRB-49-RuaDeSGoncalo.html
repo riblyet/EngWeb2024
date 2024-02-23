@@ -1,61 +1,295 @@
-<rua {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation="../MRB-rua (3).xsd"><meta><h3>Nº 49</h3><h1>Rua de S. Gonçalo</h1></meta><body><p>Rua íngreme, pertencente ao complexo urbanístico do <b>campo Novo</b>, ligava 
-            esta praça com o <b norm="Campo de Santa Ana">campo de Santa Ana</b>.</p><p>Aberta também em <data>1725</data>, tinha em <data>1750</data> a parte em declive ocupada por 
-            quintais: do lado Nascente, o do <b>Recolhimento das Convertidas</b> e, do oposto, o 
-            de uma casa do <b>campo de Santa Ana</b> pertencente ao <b>Mosteiro de Vilar de Frades</b> 
-            (o quintal era, porém, prazo do <entidade tipo="instituição">Cabido</entidade>).</p><p>A metade Norte da rua, bastante plana, tinha do lado Nascente, uma série 
-            de casas térreas (71,5%): o Poente apresentava bastantes diferenças: não só os 
-            edifícios são todos de dois pisos como, também, há uma casa, no prazo n.º 4, 
-            com um desenho de fachada diferente, mais moderno, próximo dos da <b>praça do Gavião</b>. 
-            No prazo n.º 11 vê-se a fachada lateral de um edifício que tem a frontaria 
-            virada à <b norm="Praça do Gavião">praça do Gavião</b>; é curioso ver-se aqui que todo o programa foi totalmente 
-            alterado, mostrando não só que a divisão em dois pisos não foi seguida, permitindo 
-            a abertura de janelas de uma forma anárquica, como, também, que essas janelas 
-            não têm a «moldura» de pedra que as enobrecia.</p><p>Todas as 23 casas aqui apresentadas são prazos do <entidade tipo="instituição">Cabido</entidade>. No gaveto Nascente 
-            havia ainda, nesta data, um lote vazio para construção.</p><p>Mantém o nome de <b norm="Rua de S. Gonçalo">rua de S. Gonçalo.</b></p><figura id="MRB-49-a"><img path="../imagem/MRB-49-RuaDeSGoncalo-a.jpg" src="../imagem/MRB-49-RuaDeSGoncalo-a.jpg"/><h4>Fig. : Rua de S.Gonçalo - Vista nascente-</h4></figura><figura id="MRB-49-b"><img path="../imagem/MRB-49-RuaDeSGoncalo-b.jpg" src="../imagem/MRB-49-RuaDeSGoncalo-b.jpg"/><h4>Fig. : Rua de S.Gonçalo - Vista poente.</h4></figura><lista-casas><casa><h3>Nº 1</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p>Pertence à casa n.º 5 do <b norm="Campo de Santa Ana">campo de Sta. Ana</b>, 
-                    para onde tem a frontaria e serventia principais</p></li></casa><casa><h3>Nº 2</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p>«Chão de casa» do prazo do <entidade tipo="família">casal dos Chãos ou Quinteiro</entidade>.</p></li></casa><casa><h3>Nº 3</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p>Paga foro ao enfiteuta do prazo do <entidade tipo="família">casal dos Chãos ou Quinteiro</entidade>.</p><p>Confronta, do norte, com portal do n.º 4.</p></li></casa><casa><h3>Nº 4</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p>O <entidade tipo="pessoa">Padre Inácio Palhares</entidade> paga 2400 reis ao 
-                        enfiteuta do prazo do <entidade tipo="família">casal dos Chãos ou Quinteiro</entidade>, 
-                        conforme o subemprazamento de <data>1725</data>.</p></li></casa><casa><h3>Nº 5</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">António Vieira da Costa</entidade>, da freguesia de 
-                        <b>Adaufe</b>, casado com <entidade tipo="pessoa">Helena Francisca da Cruz</entidade>, 
-                        paga 1200 reis ao enfiteuta do prazo do <entidade tipo="família">casal dos Chãos ou Quinteiro</entidade>, 
-                        conforme o subemprazamento de <data>1725</data>.</p></li></casa><casa><h3>Nº 6</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p>O <entidade tipo="pessoa">Padre Jerónimo Vieira</entidade> paga 1200 reis ao 
-                        enfiteuta do prazo do <entidade tipo="família">casal dos Chãos ou Quinteiro</entidade>, 
-                        conforme o subemprazamento de <data>1725</data>.</p></li></casa><casa><h3>Nº 7</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">João Vieira</entidade>, sombreireiro, casado com <entidade tipo="pessoa">Teresa de Sá</entidade>, 
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Rua de S. Gonçalo</title>
+            <meta charset="utf-8">
+            <style>
+                .container {
+                    background-color: white;
+                }
+                .header {
+                    background-color: purple;
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                }
+                .photos-title {
+                    text-align: center;
+                }
+                .photo-container {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                }
+                .photo-card {
+                    width: 50%;
+                    padding: 10px;
+                }
+                .photo-card img {
+                    width: 100%;
+                }
+                .description {
+                    margin-top: 20px;
+                }
+                .casas-table {
+                    margin-top: 20px;
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+                .casas-table th, .casas-table td {
+                    border: 1px solid black;
+                    padding: 8px;
+                    text-align: left;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <header class="header">
+                    <h1>Rua de S. Gonçalo</h1>
+                </header>
+                
+                <div class="photos-title">
+                    <h3>Fotos atuais</h3>
+                </div>
+    
+        <div class="photo-container">
+            <div class="photo-card">
+                <img src="../atual/49-RuaDeS.Gona╠üalo-Vista1.JPG">
+            </div>
+        </div>     
+        
+        <div class="photo-container">
+            <div class="photo-card">
+                <img src="../atual/49-RuaDeS.Gona╠üalo-Vista2.JPG">
+            </div>
+        </div>     
+        
+        <div class="photos-title">
+            <h3>Fotos antigas</h3>
+        </div>
+    
+        <div class="photo-container">
+            <div class="photo-card">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="../imagem/MRB-49-RuaDeSGoncalo-a.jpg" style="margin-bottom: 10px;">
+                    <h4 style="text-align: center;">Rua de S.Gonçalo - Vista nascente-</h4>  
+                </div>
+            </div>
+        </div>
+        
+        <div class="photo-container">
+            <div class="photo-card">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="../imagem/MRB-49-RuaDeSGoncalo-b.jpg" style="margin-bottom: 10px;">
+                    <h4 style="text-align: center;">Rua de S.Gonçalo - Vista poente.</h4>  
+                </div>
+            </div>
+        </div>
+        
+        <div class="description">
+            <h3>Descrição</h3>
+            <p>Mantém o nome de <b>rua de S. Gonçalo.</b></p>
+        </div>
+    
+        <div class="description">
+            <h3>Casas</h3>
+        </div>
+    
+        <table class="casas-table">
+            <tr>
+                <th>Número</th>
+                <th>Dono</th>
+                <th>Preço</th>
+                <th>Descrição</th>
+            </tr>
+    
+        <tr>
+            <td>1</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>Pertence à casa n.º 5 do <b>campo de Sta. Ana</b>, 
+                    para onde tem a frontaria e serventia principais</p></td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>«Chão de casa» do prazo do <b>casal dos Chãos ou Quinteiro</b>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>3</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>Paga foro ao enfiteuta do prazo do <b>casal dos Chãos ou Quinteiro</b>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>4</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>O <b>Padre Inácio Palhares</b> paga 2400 reis ao 
+                        enfiteuta do prazo do <b>casal dos Chãos ou Quinteiro</b>, 
+                        conforme o subemprazamento de <i>1725</i>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>5</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>António Vieira da Costa</b>, da freguesia de 
+                        <b>Adaufe</b>, casado com <b>Helena Francisca da Cruz</b>, 
+                        paga 1200 reis ao enfiteuta do prazo do <b>casal dos Chãos ou Quinteiro</b>, 
+                        conforme o subemprazamento de <i>1725</i>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>6</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>O <b>Padre Jerónimo Vieira</b> paga 1200 reis ao 
+                        enfiteuta do prazo do <b>casal dos Chãos ou Quinteiro</b>, 
+                        conforme o subemprazamento de <i>1725</i>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>7</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>João Vieira</b>, sombreireiro, casado com <b>Teresa de Sá</b>, 
                         paga 1200 reis ao enfiteuta do prazo do 
-                        <entidade tipo="família">casal dos Chãos ou Quinteiro</entidade>, conforme o 
-                        subemprazamento de <data>1726</data>.</p></li></casa><casa><h3>Nº 8</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">João Gonçalves</entidade>, serralheiro, casado com 
-                        <entidade tipo="pessoa">Inocência Rodrigues</entidade>, paga 1200 reis ao 
-                        enfiteuta do prazo do <entidade tipo="família">casal dos Chãos ou Quinteiro</entidade>, 
-                        conforme o subemprazamento de <data>1725</data>.</p></li></casa><casa><h3>Nº 9</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">João Vieira</entidade>, carpinteiro, casado com <entidade tipo="pessoa">Custódia Ferreira</entidade>, 
+                        <b>casal dos Chãos ou Quinteiro</b>, conforme o 
+                        subemprazamento de <i>1726</i>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>8</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>João Gonçalves</b>, serralheiro, casado com 
+                        <b>Inocência Rodrigues</b>, paga 1200 reis ao 
+                        enfiteuta do prazo do <b>casal dos Chãos ou Quinteiro</b>, 
+                        conforme o subemprazamento de <i>1725</i>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>9</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>João Vieira</b>, carpinteiro, casado com <b>Custódia Ferreira</b>, 
                         paga 1200 reis ao enfiteuta do prazo 
-                        do <entidade tipo="família">casal dos Chãos ou Quinteiro</entidade>, conforme o 
-                        subemprazamento feito em <data>1725</data>.</p></li></casa><casa><h3>Nº 10</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">José de Oliveira</entidade>, da freguesia de <b>S. Mamede d'Este</b>, 
-                        casado com <entidade tipo="pessoa">Maria Lopes</entidade>, paga 1200 
-                        reis ao enfiteuta do prazo do <entidade tipo="família">casal dos Chãos ou Quinteiro</entidade>, 
-                        conforme o subemprazamento de <data>1727</data>.</p></li></casa><casa><h3>Nº 11</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">André Lopes</entidade>, mestre pedreiro, casado com 
-                        <entidade tipo="pessoa">Maria Francisca</entidade>, paga 1900 reis ao enfiteuta do 
-                        prazo do <entidade tipo="família">casal dos Chãos ou Quinteiro</entidade>.</p><p>A este prazo pertence o n.° 1 da <b>Praça do Gavião</b>. 
-                        O n.° 11 foi construído depois de <data>1727</data> 
-                        e o ri.° 1 depois de <data>1735</data>.</p></li></casa><casa><h3>Nº 12</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p>«Chão de casa» do prazo do <entidade tipo="família">casal dos Chãos ou Quinteiro</entidade>.</p></li></casa><casa><h3>Nº 13</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">Bento Garcia</entidade>, serralheiro, casado com <entidade tipo="pessoa">Leonarda da Silva</entidade>, 
+                        do <b>casal dos Chãos ou Quinteiro</b>, conforme o 
+                        subemprazamento feito em <i>1725</i>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>10</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>José de Oliveira</b>, da freguesia de <b>S. Mamede d'Este</b>, 
+                        casado com <b>Maria Lopes</b>, paga 1200 
+                        reis ao enfiteuta do prazo do <b>casal dos Chãos ou Quinteiro</b>, 
+                        conforme o subemprazamento de <i>1727</i>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>11</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>André Lopes</b>, mestre pedreiro, casado com 
+                        <b>Maria Francisca</b>, paga 1900 reis ao enfiteuta do 
+                        prazo do <b>casal dos Chãos ou Quinteiro</b>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>12</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>«Chão de casa» do prazo do <b>casal dos Chãos ou Quinteiro</b>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>13</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Bento Garcia</b>, serralheiro, casado com <b>Leonarda da Silva</b>, 
                         paga 1200 reis ao enfiteuta do prazo 
-                        do <entidade tipo="família">casal dos Chãos ou Quinteiro</entidade>, conforme o 
-                        subemprazamento de <data>1725</data>.</p></li></casa><casa><h3>Nº 14</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">Domingos António</entidade>, barbeiro, casado com <entidade tipo="pessoa">Marta Maria</entidade>, 
+                        do <b>casal dos Chãos ou Quinteiro</b>, conforme o 
+                        subemprazamento de <i>1725</i>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>14</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Domingos António</b>, barbeiro, casado com <b>Marta Maria</b>, 
                         paga 1200 reis ao enfiteuta do prazo do 
-                        <entidade tipo="família">casal dos Chãos ou Quinteiro</entidade>, 
-                        conforme subemprazamento de <data>1725</data>.</p></li></casa><casa><h3>Nº 15</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">Miguel Rodrigues</entidade>, espingardeiro, casado com 
-                        <entidade tipo="pessoa">Ana Rodrigues</entidade>, paga 1200 reis ao enfiteuta do 
-                        prazo do <entidade tipo="família">casal dos Chãos ou Quinteiro</entidade>, 
-                        conforme o subemprazamento de <data>1726</data>.</p></li></casa><casa><h3>Nº 16 e 17</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">André da Silva</entidade>, albardeiro, casado com <entidade tipo="pessoa">Maria Francisca</entidade>, 
+                        <b>casal dos Chãos ou Quinteiro</b>, 
+                        conforme subemprazamento de <i>1725</i>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>15</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Miguel Rodrigues</b>, espingardeiro, casado com 
+                        <b>Ana Rodrigues</b>, paga 1200 reis ao enfiteuta do 
+                        prazo do <b>casal dos Chãos ou Quinteiro</b>, 
+                        conforme o subemprazamento de <i>1726</i>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>16 e 17</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>André da Silva</b>, albardeiro, casado com <b>Maria Francisca</b>, 
                         paga, por cada uma das casas, 1200 
-                        reis ao enfiteuta do prazo do <entidade tipo="família">casal dos Chãos ou Quinteiro</entidade>, 
-                        conforme os subemprazamentos de <data>1726</data>.</p></li></casa><casa><h3>Nº 18</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">Pedro Mendes</entidade>, alfaiate, casado com <entidade tipo="pessoa">Rosa Teixeira</entidade>, 
+                        reis ao enfiteuta do prazo do <b>casal dos Chãos ou Quinteiro</b>, 
+                        conforme os subemprazamentos de <i>1726</i>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>18</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Pedro Mendes</b>, alfaiate, casado com <b>Rosa Teixeira</b>, 
                         paga 1500 reis ao enfiteuta do prazo 
-                        do <entidade tipo="família">casal dos Chãos ou Quinteiro</entidade>, conforme o 
-                        subemprazamento de <data>1725</data>.</p></li></casa><casa><h3>Nº 19 e 20</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">André da Silva</entidade>, casado com <entidade tipo="pessoa">Maria Francisca</entidade>, 
-                        paga 600 reis ao enfiteuta do prazo do <entidade tipo="família">casal dos Chãos ou Quinteiro</entidade>, 
-                        conforme o subemprazamento de <data>1726</data>.</p></li></casa><casa><h3>Nº 21 e 26</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">André da Silva</entidade>, albardeiro, casado com <entidade tipo="pessoa">Maria Francisca</entidade>, 
+                        do <b>casal dos Chãos ou Quinteiro</b>, conforme o 
+                        subemprazamento de <i>1725</i>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>19 e 20</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>André da Silva</b>, casado com <b>Maria Francisca</b>, 
+                        paga 600 reis ao enfiteuta do prazo do <b>casal dos Chãos ou Quinteiro</b>, 
+                        conforme o subemprazamento de <i>1726</i>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>21 e 26</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>André da Silva</b>, albardeiro, casado com <b>Maria Francisca</b>, 
                         paga 3710 reis ao enfiteuta do prazo 
-                        do <entidade tipo="família">casal dos Chãos ou Quinteiro</entidade>, à face do qual 
-                        foi subemprazado, no ano de <data>1732</data>. A casa 
+                        do <b>casal dos Chãos ou Quinteiro</b>, à face do qual 
+                        foi subemprazado, no ano de <i>1732</i>. A casa 
                         n.º 26 correspondia, antes desta data, a duas 
                         moradas de casas. Confronta, do sul, com o 
-                        quintal do <b>Recolhimento de Sta. Maria Madalena</b>.</p></li></casa></lista-casas></body></rua>
+                        quintal do <b>Recolhimento de Sta. Maria Madalena</b>.</p></td>
+        </tr>
+        
+        </table>
+    </div>
+    
+    <div class="header" style="background-color: white;">
+        <a href="../index.html">Voltar ao índice</a>
+    </div>
+    
+    </body>
+    </html>
+    

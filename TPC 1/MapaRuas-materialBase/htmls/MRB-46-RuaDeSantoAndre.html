@@ -1,22 +1,424 @@
-<rua {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation="file:/C:/Users/maria/OneDrive/%C3%81rea%20de%20Trabalho/UMINHO/4%C2%BA%20ANO/1%C2%BA%20SEMESTRE/Publica%C3%A7%C3%B5es%20Eletr%C3%B3nicas/PROJETO%20FINAL/XML%20E%20IMAGENS/MRB-rua.xsd"><meta><h3>Nº 46</h3><h1>Rua de Santo André</h1></meta><body><p>
-            Aberta em <data>1725</data>, em conexão com o conjunto que tem centro na <b>praça do Gavião</b>. Ligava o <b>largo dos Penedos</b> com a <b>praça do Gavião</b>.
-        </p><p>Zona de expansão da cidade setecentista, obedecia a um sistema de loteamento semelhante ao actual.</p><p>Rapidamente se encheu de casas de desenho tradicional que, embora obedecendo a um plano prévio de construção, permitia pequenas variantes de composição nas fachadas. Só os prazos (lotes) 26, 27 e 28 estavam «chãos» em <data>1750</data>.</p><p>As casas são de dois pisos, tendo quase todas, no andar nobre, janelas do tipo bracarense. Seis edificações há que são térreas, embora dentro do mesmo esquema construtivo.</p><p>As 25 casas do lado Norte e 21 do Sul eram todas prazos do <entidade tipo="pessoa">Cabido</entidade>. </p><p>Mantém a designação de <b>rua de Santo André</b>.</p><figura id="MRB-46-norte"><img path="../imagem/MRB-46-RuaDeSantoAndre-a(norte).jpg" src="../imagem/MRB-46-RuaDeSantoAndre-a(norte).jpg"/><h4>Fig. : Praça do Gavião - Nascente.</h4></figura><figura id="MRB-46-sul"><img path="../imagem/MRB-46-RuaDeSantoAndre-a(sul).jpg" src="../imagem/MRB-46-RuaDeSantoAndre-a(sul).jpg"/><h4>Fig. : Praça do Gavião - Nascente.</h4></figura><lista-casas><casa><h3>Nº 1</h3><li>Descrição: <p>Pertence à casa n.° 111, da <b>Rua dos Chãos de Cima</b>,para onde tem frontaria e serventia principais.
-                    </p></li></casa><casa><h3>Nº 2</h3><li>Descrição: <p><entidade tipo="pessoa">Manuel Pereira</entidade>, casado com <entidade tipo="pessoa">Quitéria da Silva</entidade>. paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Confronta, do poente. com o quintal da casa n.° III da <b>Rua dos Chãos de Cima</b>.</p></li></casa><casa><h3>Nº 3</h3><li>Descrição: <p>Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></li></casa><casa><h3>Nº 4</h3><li>Descrição: <p>Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></li></casa><casa><h3>Nº 5</h3><li>Descrição: <p>Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></li></casa><casa><h3>Nº 6 e 7</h3><li>Descrição: <p>Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></li></casa><casa><h3>Nº 8</h3><li>Descrição: <p><entidade tipo="pessoa">João Gomes da Silva</entidade>, alfaiate, casado com <entidade tipo="pessoa">Teresa Maria</entidade>, paga 1500 reis, ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></li></casa><casa><h3>Nº 9</h3><li>Descrição: <p><entidade tipo="pessoa">Francisco de Sousa</entidade>, marceiro, casado com <entidade tipo="pessoa">Francisca Soares</entidade>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></li></casa><casa><h3>Nº 10</h3><li>Descrição: <p><entidade tipo="pessoa">José de Carvalho</entidade>, sapateiro casado com <entidade tipo="pessoa">Maria Soares</entidade>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro</p></li></casa><casa><h3>Nº 11</h3><li>Descrição: <p><entidade tipo="pessoa">Bento Pereira Machado</entidade>, clérigo in Minoribus, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></li></casa><casa><h3>Nº 12</h3><li>Descrição: <p><entidade tipo="pessoa">Manuel Fernandes</entidade>, ferreiro, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro</p></li></casa><casa><h3>Nº 13</h3><li>Descrição: <p><entidade tipo="pessoa">Santos da Mota</entidade>, mestre de meninos, casado com <entidade tipo="pessoa">Ana de Magalhães</entidade>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></li></casa><casa><h3>Nº 14</h3><li>Descrição: <p><entidade tipo="pessoa">João da Cunha</entidade>, emxambrador, casado com <entidade tipo="pessoa">Maria Teresa da Silva</entidade>, paga 2000 reis ao enfiteuta do prazo do casal dos chãos ou Quinteiro.
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Rua de Santo André</title>
+            <meta charset="utf-8">
+            <style>
+                .container {
+                    background-color: white;
+                }
+                .header {
+                    background-color: purple;
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                }
+                .photos-title {
+                    text-align: center;
+                }
+                .photo-container {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                }
+                .photo-card {
+                    width: 50%;
+                    padding: 10px;
+                }
+                .photo-card img {
+                    width: 100%;
+                }
+                .description {
+                    margin-top: 20px;
+                }
+                .casas-table {
+                    margin-top: 20px;
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+                .casas-table th, .casas-table td {
+                    border: 1px solid black;
+                    padding: 8px;
+                    text-align: left;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <header class="header">
+                    <h1>Rua de Santo André</h1>
+                </header>
+                
+                <div class="photos-title">
+                    <h3>Fotos atuais</h3>
+                </div>
+    
+        <div class="photo-container">
+            <div class="photo-card">
+                <img src="../atual/46-RuaDeSantoAndrC╠º-Vista1.JPG">
+            </div>
+        </div>     
+        
+        <div class="photo-container">
+            <div class="photo-card">
+                <img src="../atual/46-RuaDeSantoAndrC╠º-Vista2.JPG">
+            </div>
+        </div>     
+        
+        <div class="photos-title">
+            <h3>Fotos antigas</h3>
+        </div>
+    
+        <div class="photo-container">
+            <div class="photo-card">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="../imagem/MRB-46-RuaDeSantoAndre-a(norte).jpg" style="margin-bottom: 10px;">
+                    <h4 style="text-align: center;">Praça do Gavião - Nascente.</h4>  
+                </div>
+            </div>
+        </div>
+        
+        <div class="photo-container">
+            <div class="photo-card">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="../imagem/MRB-46-RuaDeSantoAndre-a(sul).jpg" style="margin-bottom: 10px;">
+                    <h4 style="text-align: center;">Praça do Gavião - Nascente.</h4>  
+                </div>
+            </div>
+        </div>
+        
+        <div class="description">
+            <h3>Descrição</h3>
+            <p>Mantém a designação de <b>rua de Santo André</b>.</p>
+        </div>
+    
+        <div class="description">
+            <h3>Casas</h3>
+        </div>
+    
+        <table class="casas-table">
+            <tr>
+                <th>Número</th>
+                <th>Dono</th>
+                <th>Preço</th>
+                <th>Descrição</th>
+            </tr>
+    
+        <tr>
+            <td>1</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>Pertence à casa n.° 111, da <b>Rua dos Chãos de Cima</b>,para onde tem frontaria e serventia principais.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>
+                        <b>Manuel Pereira</b>, casado com <b>Quitéria da Silva</b>. paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Confronta, do poente. com o quintal da casa n.° III da <b>Rua dos Chãos de Cima</b>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>3</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></td>
+        </tr>
+        
+        <tr>
+            <td>4</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></td>
+        </tr>
+        
+        <tr>
+            <td>5</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></td>
+        </tr>
+        
+        <tr>
+            <td>6 e 7</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></td>
+        </tr>
+        
+        <tr>
+            <td>8</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>João Gomes da Silva</b>, alfaiate, casado com <b>Teresa Maria</b>, paga 1500 reis, ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></td>
+        </tr>
+        
+        <tr>
+            <td>9</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Francisco de Sousa</b>, marceiro, casado com <b>Francisca Soares</b>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></td>
+        </tr>
+        
+        <tr>
+            <td>10</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>José de Carvalho</b>, sapateiro casado com <b>Maria Soares</b>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro</p></td>
+        </tr>
+        
+        <tr>
+            <td>11</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Bento Pereira Machado</b>, clérigo in Minoribus, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></td>
+        </tr>
+        
+        <tr>
+            <td>12</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Manuel Fernandes</b>, ferreiro, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro</p></td>
+        </tr>
+        
+        <tr>
+            <td>13</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Santos da Mota</b>, mestre de meninos, casado com <b>Ana de Magalhães</b>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></td>
+        </tr>
+        
+        <tr>
+            <td>14</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>João da Cunha</b>, emxambrador, casado com <b>Maria Teresa da Silva</b>, paga 2000 reis ao enfiteuta do prazo do casal dos chãos ou Quinteiro.
                         Confronta, do nascente, com a <b>Rua de S. Barnabé</b>.
-                    </p></li></casa><casa><h3>Nº 15</h3><li>Descrição: <p><entidade tipo="pessoa">Barnabé de Araújo Pereira</entidade>, inquiridor, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>15</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Barnabé de Araújo Pereira</b>, inquiridor, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
                         Confronta, do poente, com a <b>Rua de S. Barnabé</b>.
-                    </p></li></casa><casa><h3>Nº 16</h3><li>Descrição: <p><entidade tipo="pessoa">Domingos Fernandes</entidade>, casado com <entidade tipo="pessoa">Faustina Maria da Graça</entidade>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></li></casa><casa><h3>Nº 17</h3><li>Descrição: <p><entidade tipo="pessoa">Jerónimo Fernandes</entidade>, entalhador, casado com <entidade tipo="pessoa">Teresa Vieira</entidade>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></li></casa><casa><h3>Nº 18 e 19</h3><li>Descrição: <p><entidade tipo="pessoa">Custódia Gomes</entidade>, viúva, paga 2400 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></li></casa><casa><h3>Nº 20</h3><li>Descrição: <p>O <entidade tipo="pessoa">Padre José Teixeira de Melo</entidade> paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></li></casa><casa><h3>Nº 21</h3><li>Descrição: <p><entidade tipo="pessoa">Isidoro da Costa</entidade>, casado com <entidade tipo="pessoa">Ana Maria de Sousa</entidade>. paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></li></casa><casa><h3>Nº 22</h3><li>Descrição: <p><entidade tipo="pessoa">Manuel Esteves de Almeida</entidade>, casado com <entidade tipo="pessoa">Maria de Paiva</entidade>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></li></casa><casa><h3>Nº 23 e 24</h3><li>Descrição: <p><entidade tipo="pessoa">Crispiano Ferreira</entidade>, da freguesia de <b>Sta. Maria de Palmeira</b>, paga 2900 reis ao enfiteuta do prazo do casal, dos Chãos ou Quinteiro.
-                        Estas casas foram unidas em <data>1745</data>.
-                    </p></li></casa><casa><h3>Nº 25</h3><li>Descrição: <p><entidade tipo="pessoa">Agostinho Barbosa</entidade>, notário Apostólico, paga 1400 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Confronta, do poente, com o n.° 9 da <b>praça do Gavião</b>.</p></li></casa><casa><h3>Nº 26,27 e 28</h3><li>Descrição: <p>Chãos de casas, pertenças do prazo do casal dos Chãos ou Quinteiro. O chão n.° 26 confronta, do nascente, com o chão n.° 8 da <b>praça do Gavião</b>.
-                    </p></li></casa><casa><h3>Nº 29</h3><li>Descrição: <p>Paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></li></casa><casa><h3>Nº 30</h3><li>Descrição: <p>Paga 3000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></li></casa><casa><h3>Nº 31</h3><li>Descrição: <p><entidade tipo="pessoa">Paulo de Araújo</entidade>, ferreiro, casado com <entidade tipo="pessoa">Helena Francisca</entidade>, paga 3000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
-                        Foi construída antes de <data>1726</data>.
-                    </p></li></casa><casa><h3>Nº 32</h3><li>Descrição: <p><entidade tipo="pessoa">Paulo da Costa</entidade>, dourador, casado com <entidade tipo="pessoa">Ângela Francisca da Silva</entidade>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
-                        Foi construída antes de <data>1726</data>.
-                    </p></li></casa><casa><h3>Nº 33</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro.</li><li>Descrição: <p><entidade tipo="pessoa">Francisco Pereira</entidade>, alfaiate, casado com <entidade tipo="pessoa">Agostinha Francisca</entidade>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <data>1726</data>.
-                    </p></li></casa><casa><h3>Nº 34</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro.</li><li>Descrição: <p>O <entidade tipo="pessoa">Padre Domingos Ferreira</entidade> paga 2700 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <data>1727</data>.</p></li></casa><casa><h3>Nº 35</h3><li>Descrição: <p><entidade tipo="pessoa">António Francisco</entidade>, alfaiate, paga 3000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <data>1732</data>.</p></li></casa><casa><h3>Nº 36</h3><li>Descrição: <p>O <entidade tipo="pessoa">Padre Bento Francisco Pereira</entidade> e seu irmão, o <entidade tipo="pessoa">Padre Jerónimo Francisco Pereira</entidade>, pagam 5000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <data>1732</data>.</p></li></casa><casa><h3>Nº 37</h3><li>Descrição: <p>Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></li></casa><casa><h3>Nº 38 e 39</h3><li>Descrição: <p><entidade tipo="pessoa">José de Barros</entidade>, tratante, casado com <entidade tipo="pessoa">Catarina de Araújo</entidade>, paga 3200 reis, por cada uma destas casas, ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foram construídas antes de <data>1737</data>.
-                    </p></li></casa><casa><h3>Nº 40</h3><li>Descrição: <p><entidade tipo="pessoa">João Pereira da Silva</entidade>, sapateiro, casado com <entidade tipo="pessoa">Custódia Francisca</entidade>, paga 3000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <data>1730</data>.
-                    </p></li></casa><casa><h3>Nº 41 e 42</h3><li>Descrição: <p><entidade tipo="pessoa">Manuel Álvares</entidade>, cego, casado com <entidade tipo="pessoa">Luísa Teixeira</entidade>, paga 4500 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foram unidas em <data>1730</data>.
-                    </p></li></casa><casa><h3>Nº 43</h3><li>Descrição: <p>O <entidade tipo="pessoa">Padre André Soares de Araújo</entidade>, vigário de <entidade tipo="instituição">Sta. Maria de Ferreiros</entidade>, paga 3286 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <data>1726</data>.</p></li></casa><casa><h3>Nº 44</h3><li>Descrição: <p><entidade tipo="pessoa">Marcelino de Araújo</entidade>, escultor, casado com <entidade tipo="pessoa">Bernardina Rosa</entidade>, paga 4760 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <data>1733</data>.
-                    </p></li></casa><casa><h3>Nº 45</h3><li>Descrição: <p><entidade tipo="pessoa">Fabião Dias</entidade>, casado com <entidade tipo="pessoa">Francisca Dias</entidade>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <data>1732</data>.
-                    </p></li></casa><casa><h3>Nº 46</h3><li>Descrição: <p><entidade tipo="pessoa">Bento Ferreira</entidade>, casado com <entidade tipo="pessoa">Eugénia Francisca</entidade>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <data>1734</data>.
-                    </p></li></casa><casa><h3>Nº 47</h3><li>Descrição: <p><entidade tipo="pessoa">Francisca Vieira</entidade>, solteira, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <data>1734</data>.</p></li></casa><casa><h3>Nº 48 e 49</h3><li>Descrição: <p><entidade tipo="pessoa">Pedro Machado</entidade>, casado com <entidade tipo="pessoa">Maria Ferreira</entidade>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Ficaram unidas em <data>1738</data>. A casa n.° 49 confronta, do poente, com o quintal da casa n.° 27 da <b>Rua dos Chãos de Baixo</b>.</p></li></casa></lista-casas></body></rua>
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>16</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Domingos Fernandes</b>, casado com <b>Faustina Maria da Graça</b>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Jerónimo Fernandes</b>, entalhador, casado com <b>Teresa Vieira</b>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></td>
+        </tr>
+        
+        <tr>
+            <td>18 e 19</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Custódia Gomes</b>, viúva, paga 2400 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></td>
+        </tr>
+        
+        <tr>
+            <td>20</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>O <b>Padre José Teixeira de Melo</b> paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></td>
+        </tr>
+        
+        <tr>
+            <td>21</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Isidoro da Costa</b>, casado com <b>Ana Maria de Sousa</b>. paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></td>
+        </tr>
+        
+        <tr>
+            <td>22</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Manuel Esteves de Almeida</b>, casado com <b>Maria de Paiva</b>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></td>
+        </tr>
+        
+        <tr>
+            <td>23 e 24</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Crispiano Ferreira</b>, da freguesia de <b>Sta. Maria de Palmeira</b>, paga 2900 reis ao enfiteuta do prazo do casal, dos Chãos ou Quinteiro.
+                        Estas casas foram unidas em <i>1745</i>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Agostinho Barbosa</b>, notário Apostólico, paga 1400 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Confronta, do poente, com o n.° 9 da <b>praça do Gavião</b>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>26,27 e 28</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>Chãos de casas, pertenças do prazo do casal dos Chãos ou Quinteiro. O chão n.° 26 confronta, do nascente, com o chão n.° 8 da <b>praça do Gavião</b>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>29</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>Paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></td>
+        </tr>
+        
+        <tr>
+            <td>30</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>Paga 3000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></td>
+        </tr>
+        
+        <tr>
+            <td>31</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Paulo de Araújo</b>, ferreiro, casado com <b>Helena Francisca</b>, paga 3000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
+                        Foi construída antes de <i>1726</i>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>32</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Paulo da Costa</b>, dourador, casado com <b>Ângela Francisca da Silva</b>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
+                        Foi construída antes de <i>1726</i>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Francisco Pereira</b>, alfaiate, casado com <b>Agostinha Francisca</b>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <i>1726</i>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>34</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>O <b>Padre Domingos Ferreira</b> paga 2700 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <i>1727</i>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>35</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>António Francisco</b>, alfaiate, paga 3000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <i>1732</i>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>36</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>O <b>Padre Bento Francisco Pereira</b> e seu irmão, o <b>Padre Jerónimo Francisco Pereira</b>, pagam 5000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <i>1732</i>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>37</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.</p></td>
+        </tr>
+        
+        <tr>
+            <td>38 e 39</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>José de Barros</b>, tratante, casado com <b>Catarina de Araújo</b>, paga 3200 reis, por cada uma destas casas, ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foram construídas antes de <i>1737</i>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>40</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>João Pereira da Silva</b>, sapateiro, casado com <b>Custódia Francisca</b>, paga 3000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <i>1730</i>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>41 e 42</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Manuel Álvares</b>, cego, casado com <b>Luísa Teixeira</b>, paga 4500 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foram unidas em <i>1730</i>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>43</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>O <b>Padre André Soares de Araújo</b>, vigário de <b>Sta. Maria de Ferreiros</b>, paga 3286 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <i>1726</i>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>44</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Marcelino de Araújo</b>, escultor, casado com <b>Bernardina Rosa</b>, paga 4760 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <i>1733</i>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>45</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Fabião Dias</b>, casado com <b>Francisca Dias</b>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <i>1732</i>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>46</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Bento Ferreira</b>, casado com <b>Eugénia Francisca</b>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <i>1734</i>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>47</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Francisca Vieira</b>, solteira, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Foi construída antes de <i>1734</i>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>48 e 49</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal dos Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p><b>Pedro Machado</b>, casado com <b>Maria Ferreira</b>, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Ficaram unidas em <i>1738</i>. A casa n.° 49 confronta, do poente, com o quintal da casa n.° 27 da <b>Rua dos Chãos de Baixo</b>.</p></td>
+        </tr>
+        
+        </table>
+    </div>
+    
+    <div class="header" style="background-color: white;">
+        <a href="../index.html">Voltar ao índice</a>
+    </div>
+    
+    </body>
+    </html>
+    

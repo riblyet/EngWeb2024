@@ -1,92 +1,566 @@
-<rua {http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation="MRB-rua.xsd"><meta><h3>Nº 45</h3><h1>Rua dos Chãos de Baixo</h1></meta><body><p>
-            Longa rua existente já em <data>1281</data>, ligava a <b>Arcada</b> com o <b>largo dos Penedos</b> e que, em <data>1384</data>, foi arrasada por <entidade tipo="pessoa">D. João de Castela</entidade>.
-        </p><p>No Mappa, surge-nos cmo um local de comércio. Na sua metade Sul, sobretudo, o piso térreo dos edifícios está totalmente ocupado por largas portas de madeira que possibilitam a existência de amplos espaços com boa iluminação exterior e a atividade comercial. </p><p>Os seus prédios estão ou adaptados às novas necessidades - caso dos edifícios dos prazos 10 e 11, por exemplo, que primitivamente eram do tipo de porta com janela ao lado - ou reconstruídos, segundo o gosto burguês do séc. <data>XVII</data> que se prolongaria pela primeira metade do seguinte - casa com gelosias -, existindo ainda alguns, talvez construídos já no séc. <data>XVIII</data> que nos parecem ser o tipo da casa moderna da época (prazos 33, 35, etc.). Sente-se bem que, não obstante a grande quantidade de casas antigas que a faceavam, há uma forte vontade de mudança para novas modas sociais, que a casa do prazo 45 nos parece exemplificar bastante bem ou, sobretudo, para novos desenhos de arquitectura.</p><p>Ao sul da rua ficava o amplo <b>largo do Eyrado</b>. Estranhamente, nas suas casas não parece haver indícios de actividade comercial. Saliente-se, contudo, a grande casa n.º 54, de três pisos, com um belíssimo arco geminado, talvez ainda gótico, e outra seiscentista, ao lado do prazo nº 4.</p><p>Das 45 casas do lado Nascente e 44 do Poente eram prazos do <entidade tipo="instituição">Cabido 30 e 24</entidade>, respectivamente.</p><p>A <b>rua dos Chaos de Baixo</b> corresponde hoje à <b>Rua dos Chãos</b> e o <b>Eyrado</b> compreende o <b>largo de S. Francisco</b> e o espaço, agora construído, <entidade tipo="empresa">Banco de Portugal</entidade> e <entidade tipo="empresa">Caixa Geral de Depósitos</entidade>.</p><figura id="MRB-45-nascente"><img path="../imagem/MRB-45-RuaDosChaosDeBaixo-a(nascente).jpg" src="../imagem/MRB-45-RuaDosChaosDeBaixo-a(nascente).jpg"/><h4>Fig. : Praça do Gavião - Nascente.</h4></figura><figura id="MRB-45-poente"><img path="../imagem/MRB-45-RuaDosChaosDeBaixo-a(poente).jpg" src="../imagem/MRB-45-RuaDosChaosDeBaixo-a(poente).jpg"/><h4>Fig. : Praça do Gavião - Nascente.</h4></figura><lista-casas><casa><h3>Nº 1</h3><li>Descrição: <p>
-                        Pertence ao nº10 da <b>Rua da Fonte da Carcova</b>, para onde tem a frontaria e serventia principais. Fica situada no <b>Eirado</b>.</p></li></casa><casa><h3>Nº 2</h3><li>Inquilino: Sebastião Luís de Faria</li><li>Pensao: 140 reis e 2 galinhas</li><li>Descrição: <p>
-                        A casa n.º 4 confronta, do norte, com casa foreira a S. João do Souto. Esteve separada don.º 3 entre os anos de <data>1537</data> e <data>1541</data>.
-                    </p></li></casa><casa><h3>Nº 3 e 4</h3><li>Inquilino: Sebastião Luís de Faria</li><li>Pensao: 455 reis e 1 capão</li><li>Descrição: <p>
-                        A casa n.º 4 confronta, do norte, com casa foreira a S. João do Souto. Esteve separada don.º 3 entre os anos de <data>1537</data> e <data>1541</data>.
-                    </p></li></casa><casa><h3>Nº 5</h3><li>Inquilino: Maria Luísa Botelho</li><li>Pensao: 180 reis e 2 galinhas</li><li>Descrição: <p>Confronta, do sul, com casa foreira ao Senado da Câmara.</p></li></casa><casa><h3>Nº 6</h3><li>Inquilino: Filipe Dias</li><li>Pensao: 200 reis e 2 galinhas</li><li>Descrição: <p>O enfiteuta é filho de <entidade tipo="pessoa">Vicente Dias</entidade>, ourives, e de sua mulher, <entidade tipo="pessoa">Francisca Teresa</entidade>.A casa esteve unida ao n.° 5 entre os anos de <data>1541</data> e <data>1558</data>.
-                    </p></li></casa><casa><h3>Nº 7</h3><li>Descrição: <p>Os herdeiros de <entidade tipo="pessoa">Marcos Ferreira</entidade>, ourives, casado com <entidade tipo="pessoa">Damásia Ferreira</entidade>, pagam 920 reis, ao enfiteuta do prazo do lugar ou campo do <b>Castelo Rodrigo</b>, na <b>Rua do Anjo</b>.
-                        Esta casa era dízima a Deus e foi comprada pelo cónego <entidade tipo="pessoa">Francisco de Meira Carrilho</entidade>, enfiteuta do prazo do lugar do<b>Castelo Rodrigo</b>, que a subrogou pelas 3 casas que demolui na dita <b>Rua do Anjo</b>, ou seja, os n.°' 25, 26 e 27. Confronta, do sul, com casa foreira à cororaria.
-                    </p></li></casa><casa><h3>Nº 8</h3><li>Inquilino: Manuel da Silva Pereira, carpinteiro, casado com Joana Vieira</li><li>Pensao: 500 reis e 3 galinhas e 4 alqueires de pão</li><li>Descrição: <p>Ao prazo corresponde apenas a parte norte da casa e, um campo desta rua.
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Rua dos Chãos de Baixo</title>
+            <meta charset="utf-8">
+            <style>
+                .container {
+                    background-color: white;
+                }
+                .header {
+                    background-color: purple;
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                }
+                .photos-title {
+                    text-align: center;
+                }
+                .photo-container {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                }
+                .photo-card {
+                    width: 50%;
+                    padding: 10px;
+                }
+                .photo-card img {
+                    width: 100%;
+                }
+                .description {
+                    margin-top: 20px;
+                }
+                .casas-table {
+                    margin-top: 20px;
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+                .casas-table th, .casas-table td {
+                    border: 1px solid black;
+                    padding: 8px;
+                    text-align: left;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <header class="header">
+                    <h1>Rua dos Chãos de Baixo</h1>
+                </header>
+                
+                <div class="photos-title">
+                    <h3>Fotos atuais</h3>
+                </div>
+    
+        <div class="photo-container">
+            <div class="photo-card">
+                <img src="../atual/45-RuaDosChÔêåosDeBaixo-Vista1.JPG">
+            </div>
+        </div>     
+        
+        <div class="photo-container">
+            <div class="photo-card">
+                <img src="../atual/45-RuaDosChÔêåosDeBaixo-Vista2.JPG">
+            </div>
+        </div>     
+        
+        <div class="photos-title">
+            <h3>Fotos antigas</h3>
+        </div>
+    
+        <div class="photo-container">
+            <div class="photo-card">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="../imagem/MRB-45-RuaDosChaosDeBaixo-a(nascente).jpg" style="margin-bottom: 10px;">
+                    <h4 style="text-align: center;">Praça do Gavião - Nascente.</h4>  
+                </div>
+            </div>
+        </div>
+        
+        <div class="photo-container">
+            <div class="photo-card">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="../imagem/MRB-45-RuaDosChaosDeBaixo-a(poente).jpg" style="margin-bottom: 10px;">
+                    <h4 style="text-align: center;">Praça do Gavião - Nascente.</h4>  
+                </div>
+            </div>
+        </div>
+        
+        <div class="description">
+            <h3>Descrição</h3>
+            <p>A <b>rua dos Chaos de Baixo</b> corresponde hoje à <b>Rua dos Chãos</b> e o <b>Eyrado</b> compreende o <b>largo de S. Francisco</b> e o espaço, agora construído, <u>Banco de Portugal</u> e <u>Caixa Geral de Depósitos</u>.</p>
+        </div>
+    
+        <div class="description">
+            <h3>Casas</h3>
+        </div>
+    
+        <table class="casas-table">
+            <tr>
+                <th>Número</th>
+                <th>Dono</th>
+                <th>Preço</th>
+                <th>Descrição</th>
+            </tr>
+    
+        <tr>
+            <td>1</td>
+            <td>D.Mónica Isabel de Brito e Távora, de Vila do Conde, assistente em Lisboa.</td>
+            <td>800 reis, 3 galinhas e 1 capão</td>
+            <td><p>
+                        Pertence ao nº10 da <b>Rua da Fonte da Carcova</b>, para onde tem a frontaria e serventia principais. Fica situada no <b>Eirado</b>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td>Sebastião Luís de Faria</td>
+            <td>140 reis e 2 galinhas</td>
+            <td><p>
+                        A casa n.º 4 confronta, do norte, com casa foreira a S. João do Souto. Esteve separada don.º 3 entre os anos de <i>1537</i> e <i>1541</i>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>3 e 4</td>
+            <td>Sebastião Luís de Faria</td>
+            <td>455 reis e 1 capão</td>
+            <td><p>
+                        A casa n.º 4 confronta, do norte, com casa foreira a S. João do Souto. Esteve separada don.º 3 entre os anos de <i>1537</i> e <i>1541</i>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>5</td>
+            <td>Maria Luísa Botelho</td>
+            <td>180 reis e 2 galinhas</td>
+            <td><p>Confronta, do sul, com casa foreira ao Senado da Câmara.</p></td>
+        </tr>
+        
+        <tr>
+            <td>6</td>
+            <td>Filipe Dias</td>
+            <td>200 reis e 2 galinhas</td>
+            <td><p>O enfiteuta é filho de <b>Vicente Dias</b>, ourives, e de sua mulher, <b>Francisca Teresa</b>.A casa esteve unida ao n.° 5 entre os anos de <i>1541</i> e <i>1558</i>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>7</td>
+            <td>Filipe Dias</td>
+            <td>200 reis e 2 galinhas</td>
+            <td><p>Os herdeiros de <b>Marcos Ferreira</b>, ourives, casado com <b>Damásia Ferreira</b>, pagam 920 reis, ao enfiteuta do prazo do lugar ou campo do <b><b>Castelo Rodrigo</b></b>, na <b><b>Rua do Anjo</b></b>.
+                        Esta casa era dízima a Deus e foi comprada pelo cónego <b>Francisco de Meira Carrilho</b>, enfiteuta do prazo do lugar do<b><b>Castelo Rodrigo</b></b>, que a subrogou pelas 3 casas que demolui na dita <b><b>Rua do Anjo</b></b>, ou seja, os n.°' 25, 26 e 27. Confronta, do sul, com casa foreira à cororaria.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>8</td>
+            <td>Manuel da Silva Pereira, carpinteiro, casado com Joana Vieira</td>
+            <td>500 reis e 3 galinhas e 4 alqueires de pão</td>
+            <td><p>Ao prazo corresponde apenas a parte norte da casa e, um campo desta rua.
                         Confronta, do sul, com a outra parte da casa foreira à capela de Sta. Marta.
-                        O campo foi dividido antes de <data>1739</data>, em três partes: uma que se conserva unida a esta casa: outra ao n.° 12 da <b>Rua do Carvalhal</b>; e a terceira ao n.° 18 da dita rua.
-                    </p></li></casa><casa><h3>Nº 9</h3><li>Inquilino: Madalena Álvares, mulher de Jerónimo Pais</li><li>Pensao: 300 reis e 2 galinhas</li><li>Descrição: <p>Confronta, do norte, com casa foreira à <entidade tipo="instituição">capela de Sta. Marta</entidade> com a qual, desde <data>1492</data>, «tem serventia pelo quintal para um poço da referida casa».</p></li></casa><casa><h3>Nº 10</h3><li>Inquilino: Padre António de Castro</li><li>Pensao: 240 reis e 1 galinha vestimenteiro</li><li>Descrição: <p>
-                        O enfiteuta é filho de <entidade tipo="pessoa">António de Castro</entidade>. Confronta, do sul, com casa foreira à <entidade tipo="instituição">capela de Sta. Marta</entidade>.
-                    </p></li></casa><casa><h3>Nº 11</h3><li>Inquilino: José dos Santos</li><li>Pensao: 220 reis e 1 galinha</li><li>Descrição: <p>
-                        Confronta, do norte, com casa foreira à <entidade tipo="instituição">capela de Sta. Marta</entidade> e esteve unida ao n.° 10 entre os anos de <data>1509</data> e <data>1565</data>.
-                    </p></li></casa><casa><h3>Nº 12</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">Maria Pinto</entidade>, viúva de <entidade tipo="pessoa">Tomé Rodrigues</entidade>, paga 283 reis ao n.° 18 da <b>rua do Carvalhal</b>. Confronta, do sul, com casa foreira à <entidade tipo="instituição">capela de Sta. Marta</entidade>.
-                    </p></li></casa><casa><h3>Nº 13</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">Maria do Vale</entidade>, solteira, da <b>rua das Chagas</b>, paga 282 reis ao n.° 18 da <b>Rua do Carvalhal</b>.</p></li></casa><casa><h3>Nº 14</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</li><li>Descrição: <p>Lic. <entidade tipo="pessoa">João Álvares de Oliveira</entidade> paga 306 reis ao n.° 18 da <b>Rua do Carvalhal</b>.</p></li></casa><casa><h3>Nº 15</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</li><li>Descrição: <p>O <entidade tipo="pessoa">Padre João de Chaves</entidade>, da freguesia de <b>Palmeira</b>, paga 407 reis ao n.° 18 da <b>Rua do Carvalhal</b>.</p></li></casa><casa><h3>Nº 16</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">António Ferreira Loreto</entidade>, reitor de <entidade tipo="instituição">Sta. Maria de Adaúfe</entidade>, paga 308 reis ao n.° 18 da <b>Rua do Carvalhal</b>.</p></li></casa><casa><h3>Nº 17</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</li><li>Descrição: <p>Os herdeiros de Domingos Quinteiro, tratante, pagam 345 reis ao n.° 18 da <b>Rua do Carvalhal</b>.
-                    </p></li></casa><casa><h3>Nº 18</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">António Francisco Antunes</entidade>, abade de <entidade tipo="instituição">Fragoso</entidade>, paga 328 reis ao n.° 18 da <b>Rua do Carvalhal</b>.
-                    </p></li></casa><casa><h3>Nº 19</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</li><li>Descrição: <p>O <entidade tipo="pessoa">Padre Jerónimo Antunes da Silva</entidade> paga 328 reis ao n.° 18 da <b>Rua do Carvalhal</b>.</p></li></casa><casa><h3>Nº 20</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</li><li>Descrição: <p>
-                        O <entidade tipo="pessoa">Padre Pedro de Oliveira</entidade> paga 327 reis ao n.° 18 da <b>Rua do Carvalhal</b>.
-                    </p></li></casa><casa><h3>Nº 21</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">João da Costa</entidade>, tratante, casado com <entidade tipo="pessoa">Teresa Ferreira</entidade>, paga 327 reis ao n.° 18 da <b>Rua do Carvalhal</b>. 
-                    </p></li></casa><casa><h3>Nº 22 e 23</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</li><li>Descrição: <p><entidade tipo="pessoa">João Manuel de Faria</entidade> paga 445 reis ao n.° 18 da <b>Rua do Carvalhal</b>.
-                    </p></li></casa><casa><h3>Nº 24</h3><li>Inquilino: </li><li>Descrição: <p><entidade tipo="pessoa">António Gonçalves</entidade>, da freguesia de <b>Pedro d'Este</b>, casado com <entidade tipo="pessoa">Maria Rodrigues</entidade>, paga 200 reis ao n.° 18 da <b>rua do Carvalhal</b>. Confronta, do sul, com a casa n.° 2 da dita rua.
+                        O campo foi dividido antes de <i>1739</i>, em três partes: uma que se conserva unida a esta casa: outra ao n.° 12 da <b>Rua do Carvalhal</b>; e a terceira ao n.° 18 da dita rua.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>9</td>
+            <td>Madalena Álvares, mulher de Jerónimo Pais</td>
+            <td>300 reis e 2 galinhas</td>
+            <td><p>Confronta, do norte, com casa foreira à <b>capela de Sta. Marta</b> com a qual, desde <i>1492</i>, «tem serventia pelo quintal para um poço da referida casa».</p></td>
+        </tr>
+        
+        <tr>
+            <td>10</td>
+            <td>Padre António de Castro</td>
+            <td>240 reis e 1 galinha vestimenteiro</td>
+            <td><p>
+                        O enfiteuta é filho de <b>António de Castro</b>. Confronta, do sul, com casa foreira à <b>capela de Sta. Marta</b>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>11</td>
+            <td>José dos Santos</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        Confronta, do norte, com casa foreira à <b>capela de Sta. Marta</b> e esteve unida ao n.° 10 entre os anos de <i>1509</i> e <i>1565</i>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>12</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        <b>Maria Pinto</b>, viúva de <b>Tomé Rodrigues</b>, paga 283 reis ao n.° 18 da <b>rua do Carvalhal</b>. Confronta, do sul, com casa foreira à <b>capela de Sta. Marta</b>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>13</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p><b>Maria do Vale</b>, solteira, da <b>rua das Chagas</b>, paga 282 reis ao n.° 18 da <b>Rua do Carvalhal</b>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>14</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>Lic. <b>João Álvares de Oliveira</b> paga 306 reis ao n.° 18 da <b>Rua do Carvalhal</b>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>15</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>O <b>Padre João de Chaves</b>, da freguesia de <b>Palmeira</b>, paga 407 reis ao n.° 18 da <b>Rua do Carvalhal</b>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>16</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p><b>António Ferreira Loreto</b>, reitor de <b>Sta. Maria de Adaúfe</b>, paga 308 reis ao n.° 18 da <b>Rua do Carvalhal</b>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>Os herdeiros de Domingos Quinteiro, tratante, pagam 345 reis ao n.° 18 da <b>Rua do Carvalhal</b>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>18</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p><b>António Francisco Antunes</b>, abade de <b>Fragoso</b>, paga 328 reis ao n.° 18 da <b>Rua do Carvalhal</b>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>19</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>O <b>Padre Jerónimo Antunes da Silva</b> paga 328 reis ao n.° 18 da <b>Rua do Carvalhal</b>.</p></td>
+        </tr>
+        
+        <tr>
+            <td>20</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        O <b>Padre Pedro de Oliveira</b> paga 327 reis ao n.° 18 da <b>Rua do Carvalhal</b>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>21</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        <b>João da Costa</b>, tratante, casado com <b>Teresa Ferreira</b>, paga 327 reis ao n.° 18 da <b>Rua do Carvalhal</b>. 
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>22 e 23</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        <b>João Manuel de Faria</b> paga 445 reis ao n.° 18 da <b>Rua do Carvalhal</b>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>24</td>
+            <td>N/A</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        <b>António Gonçalves</b>, da freguesia de <b>Pedro d'Este</b>, casado com <b>Maria Rodrigues</b>, paga 200 reis ao n.° 18 da <b>rua do Carvalhal</b>. Confronta, do sul, com a casa n.° 2 da dita rua.
                         
-                    </p></li></casa><casa><h3>Nº 25</h3><li>Inquilino: </li><li>Descrição: <p>
-                        Não aparece desenhada no mapa. Foi demolida depois de <data>1686</data>, para se fazer a entrada da <b>rua de Sto. André</b>.
-                    </p></li></casa><casa><h3>Nº 26</h3><li>Inquilino: </li><li>Descrição: <p>
-                        Os herdeiros de <entidade tipo="pessoa">Jerónimo Lopes</entidade>, cabeiro, casado com <entidade tipo="pessoa">Maria Nogueira</entidade>, pagam 200 reis, e 1 galinha ao enfiteuta do prazo do casal dos Chãos ou Quinteiro
-                    </p></li></casa><casa><h3>Nº 27</h3><li>Inquilino: </li><li>Descrição: <p>
-                        Os herdeiros de <entidade tipo="pessoa">Jerónima da Cunha</entidade>, solteira, pagam 220 reis e 1 galinha ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.  
-                    </p></li></casa><casa><h3>Nº 28</h3><li>Inquilino: </li><li>Descrição: <p>
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td>N/A</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        Não aparece desenhada no mapa. Foi demolida depois de <i>1686</i>, para se fazer a entrada da <b>rua de Sto. André</b>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>26</td>
+            <td>N/A</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        Os herdeiros de <b>Jerónimo Lopes</b>, cabeiro, casado com <b>Maria Nogueira</b>, pagam 200 reis, e 1 galinha ao enfiteuta do prazo do casal dos Chãos ou Quinteiro
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>27</td>
+            <td>N/A</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        Os herdeiros de <b>Jerónima da Cunha</b>, solteira, pagam 220 reis e 1 galinha ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.  
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>28</td>
+            <td>N/A</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
                         Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
-                    </p></li></casa><casa><h3>Nº 29</h3><li>Inquilino: </li><li>Descrição: <p>
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>29</td>
+            <td>N/A</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
                         Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. 
-                    </p></li></casa><casa><h3>Nº 30</h3><li>Inquilino: </li><li>Descrição: <p>
-                        Os herdeiros de <entidade tipo="pessoa">João Lourenço</entidade>, espingardeiro, casado com <entidade tipo="pessoa">Maria Amónia</entidade>, pagam 150 reis ao enfiteuta do prazo do Casal dos Chãos ou Quinteiro.
-                    </p></li></casa><casa><h3>Nº 31</h3><li>Inquilino: </li><li>Descrição: <p>
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>30</td>
+            <td>N/A</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        Os herdeiros de <b>João Lourenço</b>, espingardeiro, casado com <b>Maria Amónia</b>, pagam 150 reis ao enfiteuta do prazo do Casal dos Chãos ou Quinteiro.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>31</td>
+            <td>N/A</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
                         Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
-                    </p></li></casa><casa><h3>Nº 32</h3><li>Inquilino: </li><li>Descrição: <p>
-                        Os herdeiros de <entidade tipo="pessoa">Domingos Soares Pastor</entidade>, serralheiro, casado com <entidade tipo="pessoa">Maria Pereira</entidade>, pagam 200 reis e 1 galinha ao enfiteuta do, prazo do casal dos Chãos ou Quinteiro.
-                    </p></li></casa><casa><h3>Nº 33</h3><li>Inquilino: </li><li>Descrição: <p>
-                        Os herdeiros de <entidade tipo="pessoa">Bento de Araújo</entidade>, alfaiate, casado com <entidade tipo="pessoa">Mónica Barbosa</entidade>, pagam 150 reis ao enfiteuta do prazo do casal dos Chãos do Quinteiro.
-                        Antes do ano de <data>1681</data> correspondia a duas casas.
-                    </p></li></casa><casa><h3>Nº 34</h3><li>Inquilino: </li><li>Descrição: <p>
-                        Os herdeiros de <entidade tipo="pessoa">João Fonseca</entidade> ,pintor, casado com <entidade tipo="pessoa">Susana Vieira</entidade>, pagam 120 reis e 1 galinha, ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
-                        Antes do ano de <data>1624</data> correspondia a duas casas.
-                    </p></li></casa><casa><h3>Nº 35</h3><li>Inquilino: </li><li>Descrição: <p>
-                        Antes do ano de <data>1545</data> pertenceu ao prazo do casal dos Chãos ou Quinteiro.
-                    </p></li></casa><casa><h3>Nº 36</h3><li>Inquilino: </li><li>Descrição: <p>
-                        Os herdeiros do <entidade tipo="pessoa">Padre João Pinto de Araújo</entidade> pagam 120 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
-                    </p></li></casa><casa><h3>Nº 37</h3><li>Inquilino: </li><li>Descrição: <p><entidade tipo="pessoa">António Garcia Pinto</entidade> paga 1200 reis ao enfiteuta do prazo da casal dos Chãos ou Quinteiro.
-                        No ano de <data>1726</data> foi incorporado neste prazo um pedaço de quintal.
-                    </p></li></casa><casa><h3>Nº 38</h3><li>Inquilino: </li><li>Descrição: <p>
-                        Os herdeiros de <entidade tipo="pessoa">Filipe Machado</entidade>, sangrador, casado com <entidade tipo="pessoa">Felicia da Costa</entidade>, pagam 50 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
-                    </p></li></casa><casa><h3>Nº 39</h3><li>Inquilino: </li><li>Descrição: <p>
-                        Os herdeiros de <entidade tipo="pessoa">Manuel de Castro</entidade>,vestimenteiro, pagam 50 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
-                    </p></li></casa><casa><h3>Nº 40</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</li><li>Descrição: <p>
-                        O <entidade tipo="pessoa">Padre António de Castro</entidade> paga 1200 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
-                        No ano de <data>1726</data> foi incorporado neste prazo um pedaço de quintal que se desmembrou do referido casal.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>32</td>
+            <td>N/A</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        Os herdeiros de <b>Domingos Soares Pastor</b>, serralheiro, casado com <b>Maria Pereira</b>, pagam 200 reis e 1 galinha ao enfiteuta do, prazo do casal dos Chãos ou Quinteiro.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>33</td>
+            <td>N/A</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        Os herdeiros de <b>Bento de Araújo</b>, alfaiate, casado com <b>Mónica Barbosa</b>, pagam 150 reis ao enfiteuta do prazo do casal dos Chãos do Quinteiro.
+                        Antes do ano de <i>1681</i> correspondia a duas casas.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>34</td>
+            <td>N/A</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        Os herdeiros de <b>João Fonseca</b> ,pintor, casado com <b>Susana Vieira</b>, pagam 120 reis e 1 galinha, ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
+                        Antes do ano de <i>1624</i> correspondia a duas casas.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>35</td>
+            <td>N/A</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        Antes do ano de <i>1545</i> pertenceu ao prazo do casal dos Chãos ou Quinteiro.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>36</td>
+            <td>N/A</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        Os herdeiros do <b>Padre João Pinto de Araújo</b> pagam 120 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>37</td>
+            <td>N/A</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        <b>António Garcia Pinto</b> paga 1200 reis ao enfiteuta do prazo da casal dos Chãos ou Quinteiro.
+                        No ano de <i>1726</i> foi incorporado neste prazo um pedaço de quintal.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>38</td>
+            <td>N/A</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        Os herdeiros de <b>Filipe Machado</b>, sangrador, casado com <b>Felicia da Costa</b>, pagam 50 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>39</td>
+            <td>N/A</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        Os herdeiros de <b>Manuel de Castro</b>,vestimenteiro, pagam 50 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>40</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        O <b>Padre António de Castro</b> paga 1200 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
+                        No ano de <i>1726</i> foi incorporado neste prazo um pedaço de quintal que se desmembrou do referido casal.
                         
-                    </p></li></casa><casa><h3>Nº 41</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</li><li>Descrição: <p><entidade tipo="pessoa">Manuel Pinheiro</entidade>, livreiro, casado com <entidade tipo="pessoa">Filipa Teresa de Araújo</entidade>, paga 900 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro, por um chão de casa «com obrigação de a construir». situado no lugar da serventia antiga que dava entrada para as casas deste casal.
-                        Foi construída depois do ano de <data>1727</data>.
-                    </p></li></casa><casa><h3>Nº 42</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</li><li>Descrição: <p>
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>41</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        <b>Manuel Pinheiro</b>, livreiro, casado com <b>Filipa Teresa de Araújo</b>, paga 900 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro, por um chão de casa «com obrigação de a construir». situado no lugar da serventia antiga que dava entrada para as casas deste casal.
+                        Foi construída depois do ano de <i>1727</i>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>42</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
                         Paga foro ao enfiteuta do prazo do casal dos Chãos do Quinteiro.
-                    </p></li></casa><casa><h3>Nº 43</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</li><li>Descrição: <p>
-                        Os herdeiros de <entidade tipo="pessoa">Manuel Marques</entidade>, sapateiro, casado com <entidade tipo="pessoa">Luisa da Mota</entidade>, pagam 120 reis ao enfiteuta do prazo do casal dos Chãos Quinteiro.
-                    </p></li></casa><casa><h3>Nº 44</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</li><li>Descrição: <p>
-                        Os herdeiros de <entidade tipo="pessoa">Jorge de Magalhães</entidade>,sapateiro, casado com <entidade tipo="pessoa">Francisca Pereira</entidade>, pagam 150 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
-                    </p></li></casa><casa><h3>Nº 45</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</li><li>Descrição: <p>
-                        Os herdeiros de <entidade tipo="pessoa">Isabel</entidade>, solteira, a Picada, pagam 100 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
-                    </p></li></casa><casa><h3>Nº 46</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</li><li>Descrição: <p>
-                        Os herdeiros de <entidade tipo="pessoa">Domingos Gonçalves</entidade>, alfaiate, casado com <entidade tipo="pessoa">Isabel Fernandes</entidade>, pagam 80 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
-                    </p></li></casa><casa><h3>Nº 47</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</li><li>Descrição: <p>
-                        Paga 10 reis, por um pedaço do quintal, ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. A casa e a outra parte do quintal não pertencem ao <entidade tipo="instituição">cabido</entidade>.
-                    </p></li></casa><casa><h3>Nº 48</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</li><li>Descrição: <p>
-                        Paga 200 reis, pelo quintal, ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. A casa e a outra parte do quintal não pertencem ao <entidade tipo="instituição">cabido</entidade>.
-                    </p></li></casa><casa><h3>Nº 49</h3><li>Inquilino: Os herdeiros de Jacinto Pereira, casado casado com Maria Sofia.</li><li>Pensao: 360 reis e 2 galinhas
-                </li></casa><casa><h3>Nº 50</h3><li>Inquilino: Pascoal Coelho, casado com Maria da Silva</li><li>Pensao: 
-                    55 reis e I galinha
-                </li></casa><casa><h3>Nº 51</h3><li>Inquilino: Os herdeiros de Domingos de Araújo, mercador, casado com Isabel Pereira</li><li>Pensao: 70 reis e 1 galinha</li><li>Descrição: <p>
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>43</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        Os herdeiros de <b>Manuel Marques</b>, sapateiro, casado com <b>Luisa da Mota</b>, pagam 120 reis ao enfiteuta do prazo do casal dos Chãos Quinteiro.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>44</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        Os herdeiros de <b>Jorge de Magalhães</b>,sapateiro, casado com <b>Francisca Pereira</b>, pagam 150 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>45</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        Os herdeiros de <b>Isabel</b>, solteira, a Picada, pagam 100 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>46</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        Os herdeiros de <b>Domingos Gonçalves</b>, alfaiate, casado com <b>Isabel Fernandes</b>, pagam 80 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>47</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        Paga 10 reis, por um pedaço do quintal, ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. A casa e a outra parte do quintal não pertencem ao <b>cabido</b>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>48</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>220 reis e 1 galinha</td>
+            <td><p>
+                        Paga 200 reis, pelo quintal, ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. A casa e a outra parte do quintal não pertencem ao <b>cabido</b>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>51</td>
+            <td>Os herdeiros de Domingos de Araújo, mercador, casado com Isabel Pereira</td>
+            <td>70 reis e 1 galinha</td>
+            <td><p>
                         Confronta, do sul, com o <b>campo de Sta. Ana</b> e <b>terreiro do Eirado</b>.
-                    </p></li></casa><casa><h3>Nº 52</h3><li>Inquilino: Os herdeiros de Francisca da Costa, solteira</li><li>Pensao: 50 reis e 1 galinha</li><li>Descrição: <p>
-                        Esteve unida no n.° 51 entre <data>1554</data> e <data>1676</data>.
-                    </p></li></casa><casa><h3>Nº 53</h3><li>Inquilino: Padre Manuel Soares Lopes</li><li>Pensao: 60 reis e 1 galinha</li><li>Descrição: <p>
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>52</td>
+            <td>Os herdeiros de Francisca da Costa, solteira</td>
+            <td>50 reis e 1 galinha</td>
+            <td><p>
+                        Esteve unida no n.° 51 entre <i>1554</i> e <i>1676</i>.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>53</td>
+            <td>Padre Manuel Soares Lopes</td>
+            <td>60 reis e 1 galinha</td>
+            <td><p>
                         Confronta, do sul, com o <b>Eirado</b> ou <b>Campo de Sta. Ana</b>.
-                    </p></li></casa><casa><h3>Nº 54</h3><li>Inquilino: João Ferreira, estalajadeiro, casado com Maria da Costa</li><li>Pensao: 100 reis e 1 galinha</li><li>Descrição: <p>
-                        Foi construída depois de <data>1603</data>, em terrenos do n.° 49. Situa-se no <b>Eirado</b> ou <b>Campo de Sta. Ana</b>. Confronta, do sul, com a outra parte da mesma casa que é dízima a Deus.
-                    </p></li></casa><casa><h3>Nº 55</h3><li>Inquilino: D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</li><li>Descrição: <p>
-                        Os herdeiros de <entidade tipo="pessoa">Maria Ferreira</entidade>, viúva de <entidade tipo="pessoa">António Rodrigues</entidade>, mercador, e sua filha <entidade tipo="pessoa">Ana</entidade>, pagam 20 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Confronta, do sul, com casa foreira à <entidade tipo="instituição">Câmara</entidade> e do poente, com o <b>Eirado</b>. Antes do ano de <data>1681</data> correspondia a duas casas.
-                    </p></li></casa></lista-casas></body></rua>
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>54</td>
+            <td>João Ferreira, estalajadeiro, casado com Maria da Costa</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>
+                        Foi construída depois de <i>1603</i>, em terrenos do n.° 49. Situa-se no <b>Eirado</b> ou <b>Campo de Sta. Ana</b>. Confronta, do sul, com a outra parte da mesma casa que é dízima a Deus.
+                    </p></td>
+        </tr>
+        
+        <tr>
+            <td>55</td>
+            <td>D. Agostinha Maria de Barros Gavião, enfiteuta principal do prazo do casal do Chãos ou Quinteiro.</td>
+            <td>100 reis e 1 galinha</td>
+            <td><p>
+                        Os herdeiros de <b>Maria Ferreira</b>, viúva de <b>António Rodrigues</b>, mercador, e sua filha <b>Ana</b>, pagam 20 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Confronta, do sul, com casa foreira à <b>Câmara</b> e do poente, com o <b>Eirado</b>. Antes do ano de <i>1681</i> correspondia a duas casas.
+                    </p></td>
+        </tr>
+        
+        </table>
+    </div>
+    
+    <div class="header" style="background-color: white;">
+        <a href="../index.html">Voltar ao índice</a>
+    </div>
+    
+    </body>
+    </html>
+    
