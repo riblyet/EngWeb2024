@@ -12,12 +12,23 @@ with open('mapa-virtual.json', 'r', encoding='utf-8') as f:
         if entry == 'cidades' : 
             for cidade in data[entry]:
                 with open('html/' + cidade['id'] + '.html', 'w', encoding='utf-8') as f:
-                    html = """<!DOCTYPE html>
-<html>
-<head>
-    <title>""" + cidade['nome'] + """</title>
-</head>
+                    html = f"""<!DOCTYPE html>
+                    <html>
+                    <head>
+                        <title>{cidade['nome']}</title>
+                    </head>
+
+                    <body>
+
+                        <h1>{cidade['nome']}</h1>
+                        <p>ID: {cidade['id']}</p>
+                        <p>Descrição: {cidade['descrição']}</p>
+                        <p>População: {cidade['população']}</p>
+                        
+                    </body>
+                    </html>
                         """
                     
                     f.write(html)
                     f.close()
+                    
