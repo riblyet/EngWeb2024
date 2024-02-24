@@ -25,10 +25,34 @@ with open('mapa-virtual.json', 'r', encoding='utf-8') as f:
                         <p>Descrição: {cidade['descrição']}</p>
                         <p>População: {cidade['população']}</p>
                         
-                    </body>
-                    </html>
+                        <h2>Ligações</h2>
+                        
+                        
                         """
                     
                     f.write(html)
                     f.close()
+                    
+        if entry == "ligacoes":
+            for ligacoes in data[entry]:
+                destino_index = int(ligacoes['destino'][1:])
+                if destino_index < len(data['cidades']):
+                    with open('html/' + ligacoes['origem'] + '.html', 'a', encoding='utf-8') as f:
+                        html = f"""
+                            <a href="{str(ligacoes['destino'])}.html">{data['cidades'][destino_index]['nome']}</a>
+                            <i>{ligacoes['distância']} km</i>
+                            <br>
+                            """
+                        f.write(html)
+                        f.close()
+        for cidade in data['cidades']:
+            with open('html/' + cidade['id'] + '.html', 'a', encoding='utf-8') as f:
+                html = f"""
+                </body>
+                </html>
+                """
+                f.write(html)
+                f.close()
+                    
+                    
                     
