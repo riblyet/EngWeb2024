@@ -64,7 +64,7 @@ with open('mapa-virtual.json', 'r', encoding='utf-8') as f:
     for cidade in cidades:
         main_html += f"""
         <tr>
-            <td><a href="html/{cidade['id']}.html">{cidade['nome']}</a></td>
+            <td><a href="{cidade['id']}">{cidade['nome']}</a></td>
         </tr>
         """
         with open('html/' + cidade['id'] + '.html', 'w', encoding='utf-8') as f:
@@ -94,7 +94,7 @@ with open('mapa-virtual.json', 'r', encoding='utf-8') as f:
             if destino_index < len(data['cidades']):
                 with open('html/' + ligacoes['origem'] + '.html', 'a', encoding='utf-8') as f:
                     html = f"""
-                        <a href="html/{str(ligacoes['destino'])}.html">{data['cidades'][destino_index]['nome']}</a>
+                        <a href="{str(ligacoes['destino'])}">{data['cidades'][destino_index-1]['nome']}< /a>
                         <i>{ligacoes['distância']} km</i>
                         <br>
                         """

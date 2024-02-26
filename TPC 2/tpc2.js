@@ -1,26 +1,48 @@
-var http = require('http');
-var fs = require('fs');
-var url = require('url');
+const http = require('http');
+const url = require('url');
+const fs = require('fs');
 
-http.createServer(function(req, res) {
-    // c1 - c100
-    var regex = /\/c[1-9][0-9]{0,2}$/;                               
-    var q = url.parse(req.url, true);
-    console.log(regex.test(q.pathname));
-    if (regex.test(q.pathname)) {
-        var filePath = 'html/' + q.pathname.substring(3) + '.html';
-        console.log(filePath);
-        fs.readFile(filePath, function(err, data) {
+http.createServer((req, res) => {
+    const q = url.parse(req.url, true).pathname.slice(1) // Tirar a barra '/'
+    if (q === '') {
+        fs.readFile('index.html', (err, data) => {
             if (err) {
-                res.writeHead(404, {'Content-Type': 'text/html; charset=utf-8'});
-                res.write('<h1>404 Not Found</h1>');
+                res.writeHead(404, {'Content-Type': 'text/plain'});
+                res.write('404 File Not Found');
                 res.end();
             } else {
                 res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
                 res.write(data);
-                res.write('<pre>' + q.pathname + '</pre>');
                 res.end();
+            }
+        })
+    } else {
+        fs.readFile('mapa-virtual.json', (err, jsonData) => {
+            if (err) {
+                res.writeHead(500, {'Content-Type': 'text/plain'});
+                res.write('500 Internal Server Error');
+                res.end();
+            } else {
+                const ids = JSON.parse(jsonData).cidades.map(cidade => cidade.id)
+                if (ids.includes(q)) {
+                    fs.readFile(`html/${q}.html`, (err, data) => {
+                        if (err) {
+                            res.writeHead(404, {'Content-Type': 'text/plain'});
+                            res.write('404 File Not Found');
+                            res.end();
+                        } else {
+                            res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
+                            res.write(data);
+                            res.end();
+                        }
+                    });
+                } else {
+                res.writeHead(404, {'Content-Type': 'text/plain'});
+                res.write('404 Id Not Found');
+                res.end();
+                }
             }
         });
     }
-}).listen(7777);
+}).listen(7775);
+
