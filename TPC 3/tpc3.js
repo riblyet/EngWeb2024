@@ -64,7 +64,7 @@ function geraFilme(Filme){
             <br>
             <div class="w3-container">
                 <pre>
-                    ${JSON.stringify(Filme, null, 2)}
+                    ${JSON.stringify(Filme, null, 10)}
                 </pre>
             </div>
             <footer class="w3-container w3-teal">
@@ -79,7 +79,7 @@ function geraFilme(Filme){
 
 // Criação do servidor com axios
 http.createServer(function (req, res) {
-    var regex = /\/filmes\/[0-9a-f]*$/
+    var regexF = /\/filmes\/[0-9a-f]+$/
     var q = url.parse(req.url, true)
     if (q.pathname == '/') {
         fs.readFile('index.html', function (erro, dados) {
@@ -101,9 +101,8 @@ http.createServer(function (req, res) {
                 res.end();
             });
     }
-    else if (regex.test(q.pathname)) {
-        var id = q.pathname.split('/')[2]
-        axios.get(`http://localhost:3000/filmes/${id}`)
+    else if (regexF.test(q.pathname)) {
+        axios.get(`http://localhost:3000` + q.pathname)
             .then(response => {
                 res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
                 res.write(geraFilme(response.data));
