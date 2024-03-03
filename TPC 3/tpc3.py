@@ -13,7 +13,8 @@ with open('filmes.json', 'r', encoding='utf-8') as f:
 
         formatted_line = re.sub(id_original, r'{"id":"\1"', line)
         filmes.append(json.loads(formatted_line))
-        
+    
+    idG = 1
     for filme in filmes:
         if 'genres' in filme:
             for genre in filme['genres']:
@@ -25,13 +26,16 @@ with open('filmes.json', 'r', encoding='utf-8') as f:
                     })
                 else:
                     genres.append({
+                        "id": idG,
                         "genero": genre,
                         "filmes": [{
                             "id": filme['id'],
                             "titulo": filme['title']
                         }]
                     })
+                    idG += 1
         
+    idA = 1
     for filme in filmes:
         if'cast' in filme:
             for actor in filme['cast']:
@@ -44,11 +48,13 @@ with open('filmes.json', 'r', encoding='utf-8') as f:
                 else:
                     actors.append({
                         "actor": actor,
+                        "id": idA,
                         "filmes": [{
                             "id": filme['id'],
                             "titulo": filme['title']
                         }]
                     })
+                    idA += 1
 
 format = {'filmes': filmes, 'generos': genres, 'actors' : actors}
         
