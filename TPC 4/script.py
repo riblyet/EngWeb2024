@@ -1,17 +1,13 @@
 import json
+import os
 
 def read_json(file):
-    try:
-        with open(file, 'r') as f:
-            data = json.load(f)
-    except FileNotFoundError:
-        print('Erro: ficheiro não encontrado')
-    except Exception as e:
-        print('Erro:', e)
-    
+    with open(file, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+        
     return data
 
-def write_json(data, file):
+def write_json(data, file, encoding='utf-8'):
     try:
         with open(file, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=4)
@@ -20,6 +16,7 @@ def write_json(data, file):
 
 def get_periodos(data):
     periodos = []
+    idP = 1
     for i in data['compositores']:
         if 'periodo' in i:
             periodo = i['periodo']
@@ -31,15 +28,22 @@ def get_periodos(data):
                 })
             else:
                 periodos.append({
+                    "id": "P" + str(idP),
                     "periodo": periodo,
                     "compositores": [{
                         "id": i['id'],
                         "nome": i['nome'],
                     }]
                 })
+                idP += 1
     return periodos
 
-bd = read_json('compositores.json')
+
+if os.path.exists('db.json'):
+    bd = read_json('db.json')
+else:
+    bd = read_json('compositores.json')
+
 periodo = get_periodos(bd)
 
 novaDB = ({
@@ -47,4 +51,4 @@ novaDB = ({
     "periodos": periodo
     })
 
-write_json(novaDB, 'compositores2.json')
+write_json(novaDB, 'db.json')

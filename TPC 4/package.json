@@ -4,7 +4,6 @@
   "description": "TPC4",
   "main": "server.js",
   "scripts": {
-    "prestart": "python3 script.py",
     "start": "node server.js"
   },
   "author": "João Pedro Machado Ribeiro A95719",
