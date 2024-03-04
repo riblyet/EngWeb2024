@@ -4,7 +4,8 @@
   "description": "TPC4",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js"
+    "prestart": "python3 script.py",
+    "start": "node server.js"
   },
   "author": "João Pedro Machado Ribeiro A95719",
   "license": "ISC",

@@ -21,7 +21,7 @@ exports.compositorListPage = function(slist, d){
                 <div class="w3-container">
                     <table class="w3-table-all">
                         <tr>
-                            <th>Id</th><th>Nome</th><th>Bio</th><th>data Nasc</th><th>dataObito</th><th>Periodo</th>
+                            <th>Id</th><th>Nome</th><th>Data de Nascimento</th><th>Data de Óbito</th><th>Periodo</th>
                             <th>Actions</th>
                         </tr>
                 `
@@ -35,7 +35,6 @@ exports.compositorListPage = function(slist, d){
                             ${slist[i].nome}
                         </a>
                     </td>
-                    <td>${slist[i].bio}</td>
                     <td>${slist[i].dataNasc}</td>
                     <td>${slist[i].dataObito}</td>
                     <td>${slist[i].periodo}</td>

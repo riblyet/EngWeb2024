@@ -37,7 +37,7 @@ var compositoresServer = http.createServer((req, res) => {
         switch(req.method){
             case "GET": 
                 // GET /compositores --------------------------------------------------------------------
-                if(req.url == "/compositores"){
+                if(req.url == "/compositores" || req.url == "/"){
                     axios.get('http://localhost:3000/compositores')
                         .then(resposta => {
                             res.writeHead(200, {'Content-Type': 'text/html'})
