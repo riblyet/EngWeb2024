@@ -157,7 +157,7 @@ exports.compositorFormEditPage = function(a, d){
 
 // ---------------Compositor's Page--------------------------------
 // Change and adapt to current dataset...
-exports.compositorPage = function( compositor, d ){
+exports.compositorPage = function( compositor ,d ){
     var pagHTML = `
     <html>
     <head>
