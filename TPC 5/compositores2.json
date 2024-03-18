@@ -3,7 +3,7 @@
     {
       "id": "C26",
       "nome": "Alessandro Marcello",
-      "bio": "Alessandro Ignazio Marcello (Veneza, 1 de Fevereiro de 1673 –Veneza, 19 de Junho de 1747) foi um nobre e diletante, que se interessava pela         arte, tendo sido poeta, filósofo e notável músico italiano.",
+      "bio": "Alessandro Ignazio Marcello (Veneza, 1 de Fevereiro de 1673 –Veneza, 19 de Junho de 1747) foi um nobre e diletante, que se interessava pela\n         arte, tendo sido poeta, filósofo e notável músico italiano.",
       "dataNasc": "1673-02-01",
       "dataObito": "1747-06-19",
       "periodo": "Barroco"
@@ -769,6 +769,14 @@
       "periodo": "Renascimento"
     },
     {
+      "id": "C18",
+      "nome": "John Blow",
+      "bio": "John Blow (batizado a 23 de fevereiro de 1649 e falecido a 1 de outubro de 1708) foi um compositor inglês e organista da Idade do Barroco.\n         Orgulhoso e com perfil de estadista, o humilde Blow tornou-se o mais famoso músico da Inglaterra no final do século XVIII. Importante na\n         música da Restauração, teve postos reais criados especialmente para ele, como na catedral de St. Paul e em Westminster. Suas obras seculares\n         incluem música cerimonial e Venus and Adonis, a primeira ópera inglesa. Escreveu muita música religiosa em especial mais de cem hinos\n         intensamente melódicos. De seus doze trabalhos anglicanos, o em sol maior é magistral.",
+      "dataNasc": "1649-02-23",
+      "dataObito": "1708-10-01",
+      "periodo": "Renascimento"
+    },
+    {
       "id": "C280",
       "nome": "John Dowland",
       "bio": "John Dowland (1563 – 20 de Fevereiro de 1626), foi um músico, alaudista, inglês, do período renascentista, contemporâneo do escritor\n         William Shakespeare. Hoje é lembrado pela grande melancolia em suas músicas vocais. Sua música instrumental passou por uma grande\n         revitalização, tendo sido incluída no repertório de violonistas eruditos durante o século XX.",
@@ -1337,758 +1345,116 @@
       "periodo": "Barroco"
     },
     {
-      "id": "C18",
-      "nome": "Marlos Nobre de Almeida",
-      "bio": "Marlos Nobre de Almeida nasceu em Recife, Pernambuco, no dia 18 de fevereiro de 1939. Iniciou seus estudos musicais em Recife aos 5 anos de idade, no Conservatório Pernambucano de Música. Diplomou-se em piano e matérias teóricas em 1955.Em 1956 prosseguiu seus estudos no Instituto Ernâni Braga do Recife, diplomando-se com distinção em Harmonia e Contraponto em 1959. Em 1958, com uma bolsa de estudos do Departamento de Documentação e Cultura do recife, participou do I Curso Nacional de Música Sacra, cursando Harmonia, Contraponto e Composição com o padre Brighenti.",
-      "dataNasc": "18/02/1939",
-      "dataObito": "N/A",
-      "periodo": "Moderno"
+      "modalidade": "Natação",
+      "id": "EYnyuiy"
     },
     {
-      "id": "C185",
-      "nome": "Claude Debussy",
-      "bio": "Achille-Claude Debussy nasceu a 22 de agosto de 1862, em Saint-German-en-Laye, cidade situada nas proximidades de Paris. À época do nascimento de Claude, Manuel Achille Debussy e Victorine Josephine Sophie Manoury, seus pais, viviam dos parcos recursos proveniente da exploração do comércio de porcelanas.  Em 1867 instalaram-se em Paris, onde Manuel-Achille, de emprego em emprego acabaria se fixando. Aventureiro e não muito responsável, foi sempre um pai negligente, que parecia ter submergido à personalidade autoritária e irascível de sua esposa Victorine, costureira e mãe de cinco filhos, dos quais Claude era o primogênito. A precária educação das crianças foi confiada a uma irmã de Manuel Achille, Clémentine Debussy. Apenas Claude teve o triste privilégio de ser educado pela mãe, mulher que jamais suspeitou de sua natureza excepcional. A educação que transmitiu a Claude se limitou aos rudimentos de leitura, escrita e noções de cálculo. Nunca freqüentou a escola. Autodidata, chegou a tornar-se um homem culto, embora revelasse algumas lacunas em sua formação.",
-      "dataNasc": "22/08/1862",
-      "dataObito": "25/03/1918",
-      "periodo": "Moderno"
-    },
-    {
-      "id": "C55",
-      "nome": "Maurice Joseph Ravel",
-      "bio": "Maurice Ravel nasceu no dia 7 de março, filho de Joseph e Marie Ravel. A origem basca, pelo lado materno, e a proximidade da fronteira espanhola deram-lhe o gosto pela Espanha.  Quando estava com 7 anos de idade, seu pai notou-lhe o ouvido para a música e decidiu que o menino deveria ter aulas de piano. A família mudou-se para Paris, onde o pequeno Maurice pôde estudar com Henri Ghys, seu primeiro professor de piano.  Aos 12 anos de idade, tornou-se aluno de composição de Charles-René, que ensinou-lhe harmonia, contraponto e os princípios da composição. Em 1889 Ravel entrou para a classe de piano do Conservatório de Paris. Foi o ano da “Exposition Universelle”, onde Debussy maravilhou-se com a música javanesa, enquanto Ravel adquiria o gosto pela arte oriental. Sua música, de extraordinária unidade e limpidez, e de tradição clássica, ganhou com isso em colorido e originalidade.  Aos 26 anos obteve, com uma cantata, o segundo lugar no Prêmio de Roma. Nesta época já era autor de Les Sites auriculaires (1895), para dois pianos e de Pavane pour une infante défunte (1899). Ao candidatar-se novamente, em 1904, havia composto Jeux d’eau (1901, para piano), o quarteto de cordas em fá maior (1902-03) e Shéhérazade (1903). Mas não foi sequer admitido às provas eliminatórias e esta injustiça tornou-o arredio para o resto da vida. Em 1920 recusaria a Legião de Honra.",
-      "dataNasc": "07/03/1875",
-      "dataObito": "28/12/1937",
-      "periodo": "Moderno"
-    },
-    {
-      "id": "C92",
-      "nome": "Karlheinz Stockhausen",
-      "bio": "arlheinz Stockhausen (Mödrath, 22 de agosto de 1928 — Kürten, 5 de dezembro de 2007) foi um compositor alemão de música contemporânea. Foi colega de Pierre Boulez, Edgar Varése e Iannis Xenakis. Ambos estudaram com o compositor e organista Olivier Messiaen. Críticos do seu trabalho apontam-no como \"um dos grandes visionários do século XX no contexto da música pós-moderna\". É conhecido, entre outras coisas, por um trabalho notório durante a génese da música electroacústica, para introduzir procedimentos estocásticos, ao nível do indeterminismo musical, após o seu cruzamento com o compositor da cena musical do fluxus, surrealismo, e dadaísmo norte-americano Cage, mas sobretudo pelo seu envolvimento em composição serial e espacialização sonora.  Considerado um dos maiores compositores do final do século XX, foi o responsável por trabalhos artísticos de grandiosidade indiscutível. As suas obras revolucionaram a percepção de ritmo, melodia e harmonia. Trabalhos como Stimmung e Mikrophonie marcaram época quando da sua estreia pois exigiam do público percepção musical aguçada. De suas obras mais ambiciosas destacam-se o quarteto de cordas com helicópteros (Helikopter-Streichquartett) (que é tocado com estes instrumentos mesmo: um quarteto de cordas e quatro helicópteros), parte integrante de um trabalho em desenvolvimento de mais de dez anos, e a ópera Licht baseada em textos sânscritos e budistas que tem suas partes distribuídas nos dias da semana. A sua música encontra paralelos com correntes do misticismo germânico do século XX. Consta-se que Stockhausen terá tido um envolvimento grande com a cultura indiana, que terá estudado o pensamento de Sri Aurobindo, e tido um interesse fecundo, pela escola teosófica da Aurum Sri. Stockhausen aparece na capa do álbum Sargent Pepper dos Beattles. ",
-      "dataNasc": "22/08/1928",
-      "dataObito": "05/12/2007",
-      "periodo": "Serialista"
-    },
-    {
-      "id": "C95",
-      "nome": "Pierre Boulez",
-      "bio": "Pierre Boulez (Montbrison, Loire, 26 de março de 1925 — Baden Baden, 5 de janeiro de 2016) foi um maestro, pedagogo musical, ensaísta e compositor francês de música erudita. Foi uma personalidade influente no cenário musical e intelectual francês contemporâneo.",
-      "dataNasc": "26/03/1925",
-      "dataObito": "05/01/2016",
-      "periodo": "Serialista"
+      "id": "C954",
+      "nome": "DLC",
+      "bio": "jk",
+      "dataNasc": "1999",
+      "dataObito": "2002",
+      "periodo": "WGwg"
     }
   ],
   "periodos": [
     {
-      "id": "P1",
-      "periodo": "Barroco",
+      "id": "p1",
+      "nome": "Barroco",
       "compositores": [
-        {
-          "id": "C26",
-          "nome": "Alessandro Marcello"
-        },
-        {
-          "id": "C48",
-          "nome": "Alessandro Scarlatti"
-        },
-        {
-          "id": "C76",
-          "nome": "Altnickol, Johann Christoph"
-        },
-        {
-          "id": "C204",
-          "nome": "Antoine Forqueray"
-        },
-        {
-          "id": "C156",
-          "nome": "Antonio Lotti"
-        },
-        {
-          "id": "C50",
-          "nome": "Antonio Lucio Vivaldi"
-        },
-        {
-          "id": "C148",
-          "nome": "Antonio Soler"
-        },
-        {
-          "id": "C274",
-          "nome": "Ariosti, Attilio"
-        },
-        {
-          "id": "C278",
-          "nome": "Bach, Johann Sebastian"
-        },
-        {
-          "id": "C238",
-          "nome": "Bach, Wilhelm Friedemann"
-        },
-        {
-          "id": "C336",
-          "nome": "Balbastre, Claude"
-        },
-        {
-          "id": "C28",
-          "nome": "Baldassare Galuppi"
-        },
-        {
-          "id": "C282",
-          "nome": "Barbara of Portugal"
-        },
-        {
-          "id": "C334",
-          "nome": "Benda, Franz"
-        },
-        {
-          "id": "C322",
-          "nome": "Biber, Carl Heinrich"
-        },
-        {
-          "id": "C166",
-          "nome": "Bononcini, Giovanni Battista"
-        },
-        {
-          "id": "C326",
-          "nome": "Bonporti, Francesco Antonio"
-        },
-        {
-          "id": "C168",
-          "nome": "Caldara, Antonio"
-        },
-        {
-          "id": "C94",
-          "nome": "Corelli, Arcangelo"
-        },
-        {
-          "id": "C300",
-          "nome": "Couperin, Armand-Louis"
-        },
-        {
-          "id": "C106",
-          "nome": "David Perez"
-        },
-        {
-          "id": "C54",
-          "nome": "Domenico Alberti"
-        },
-        {
-          "id": "C96",
-          "nome": "Domenico Scarlatti"
-        },
-        {
-          "id": "C286",
-          "nome": "Durante, Francesco"
-        },
-        {
-          "id": "C142",
-          "nome": "Emanuele d'Astorga"
-        },
-        {
-          "id": "C188",
-          "nome": "Francesco Feo"
-        },
-        {
-          "id": "C288",
-          "nome": "Francesco Geminiani"
-        },
-        {
-          "id": "C32",
-          "nome": "Francesco Maria Veracini"
-        },
-        {
-          "id": "C170",
-          "nome": "Friederike Sophie Wilhelmine"
-        },
-        {
-          "id": "C224",
-          "nome": "Fux, Johann Joseph"
-        },
-        {
-          "id": "C254",
-          "nome": "Georg Bohm"
-        },
-        {
-          "id": "C160",
-          "nome": "Georg Muffat"
-        },
-        {
-          "id": "C56",
-          "nome": "Georg Philipp Telemann"
-        },
-        {
-          "id": "C324",
-          "nome": "Gibbs, Joseph"
-        },
-        {
-          "id": "C90",
-          "nome": "Giovanni Battista Bassani"
-        },
-        {
-          "id": "C34",
-          "nome": "Giuseppe Tartini"
-        },
-        {
-          "id": "C146",
-          "nome": "Grigny, Nicolas de"
-        },
-        {
-          "id": "C58",
-          "nome": "Handel, George Frideric"
-        },
-        {
-          "id": "C132",
-          "nome": "Hasse, Johann Adolph"
-        },
-        {
-          "id": "C82",
-          "nome": "Haym, Nicola Francesco"
-        },
-        {
-          "id": "C196",
-          "nome": "Henri Desmarets"
-        },
-        {
-          "id": "C78",
-          "nome": "Jan Dismas Zelenka"
-        },
-        {
-          "id": "C86",
-          "nome": "Jean-Joseph Mouret"
-        },
-        {
-          "id": "C330",
-          "nome": "Jean-Marie Leclair"
-        },
-        {
-          "id": "C306",
-          "nome": "Jeremiah Clarke"
-        },
-        {
-          "id": "C16",
-          "nome": "Johann Christoph(er) Pepusch"
-        },
-        {
-          "id": "C212",
-          "nome": "Johann David Heinichen"
-        },
-        {
-          "id": "C70",
-          "nome": "Johann Ernst Eberlin"
-        },
-        {
-          "id": "C270",
-          "nome": "Johann Gottlieb Goldberg"
-        },
-        {
-          "id": "C6",
-          "nome": "Johann Joachim Quantz"
-        },
-        {
-          "id": "C110",
-          "nome": "Johann Krieger"
-        },
-        {
-          "id": "C178",
-          "nome": "Johann Nicolaus Bach"
-        },
-        {
-          "id": "C8",
-          "nome": "Johann Pachelbel"
-        },
-        {
-          "id": "C66",
-          "nome": "Johann Tobias Krebs"
-        },
-        {
-          "id": "C198",
-          "nome": "John Eccles"
-        },
-        {
-          "id": "C214",
-          "nome": "Krebs, Johann Ludwig"
-        },
-        {
-          "id": "C312",
-          "nome": "Kuhnau, Johann"
-        },
-        {
-          "id": "C294",
-          "nome": "Leo, Leonardo"
-        },
-        {
-          "id": "C328",
-          "nome": "Louis Marchand"
-        },
-        {
-          "id": "C24",
-          "nome": "Louis-Claude Daquin"
-        },
-        {
-          "id": "C134",
-          "nome": "Marais, Marin"
-        },
-        {
-          "id": "C118",
-          "nome": "Marcello, Benedetto"
-        },
-        {
-          "id": "C290",
-          "nome": "Martini, Giovanni Battista"
-        },
-        {
-          "id": "C46",
-          "nome": "Mattheson, Johann"
-        },
-        {
-          "id": "C218",
-          "nome": "Maurice Greene"
-        },
-        {
-          "id": "C256",
-          "nome": "Michel Richard Delalande"
-        },
-        {
-          "id": "C332",
-          "nome": "Mondonville, Jean-Joseph"
-        },
-        {
-          "id": "C298",
-          "nome": "Neander, Joachim"
-        },
-        {
-          "id": "C40",
-          "nome": "Nicola Porpora"
-        },
-        {
-          "id": "C190",
-          "nome": "Nicolas Siret"
-        },
-        {
-          "id": "C200",
-          "nome": "Nicolaus Bruhns"
-        },
-        {
-          "id": "C98",
-          "nome": "Pergolesi, Giovanni Battista"
-        },
-        {
-          "id": "C64",
-          "nome": "Purcell, Henry"
-        },
-        {
-          "id": "C14",
-          "nome": "Rameau, Jean-Philippe"
-        },
-        {
-          "id": "C232",
-          "nome": "Robert de Visee"
-        },
-        {
-          "id": "C276",
-          "nome": "Rousseau, Jean-Jacques"
-        },
-        {
-          "id": "C264",
-          "nome": "Sammartini, Giovanni Battista"
-        },
-        {
-          "id": "C320",
-          "nome": "Sammartini, Giuseppe"
-        },
-        {
-          "id": "C258",
-          "nome": "Schenck, Johannes"
-        },
-        {
-          "id": "C42",
-          "nome": "Seixas, Carlos"
-        },
-        {
-          "id": "C164",
-          "nome": "Steffani, Agostino"
-        },
-        {
-          "id": "C20",
-          "nome": "Thomas Arne"
-        },
-        {
-          "id": "C102",
-          "nome": "Tomaso Albinoni"
-        },
-        {
-          "id": "C314",
-          "nome": "Veracini, Antonio"
-        },
-        {
-          "id": "C216",
-          "nome": "Weldon, John"
-        },
-        {
-          "id": "C172",
-          "nome": "Wilhelmine of Prussia"
-        },
-        {
-          "id": "C296",
-          "nome": "William Boyce"
-        },
-        {
-          "id": "C246",
-          "nome": "Zachow, Friedrich Wilhelm"
-        },
-        {
-          "id": "C104",
-          "nome": "Zipoli, Domenico"
-        }
+        "aklsfn",
+        "aklsfn",
+        ""
       ]
     },
     {
-      "id": "P2",
+      "id": "p2",
       "periodo": "Renascimento",
       "compositores": [
-        {
-          "id": "C206",
-          "nome": "Alessandro Stradella"
-        },
-        {
-          "id": "C192",
-          "nome": "Andrea Falconieri"
-        },
-        {
-          "id": "C242",
-          "nome": "Anerio, Felice"
-        },
-        {
-          "id": "C244",
-          "nome": "Anerio, Giovanni Francesco"
-        },
-        {
-          "id": "C88",
-          "nome": "Antonio Maria Abbatini"
-        },
-        {
-          "id": "C128",
-          "nome": "Bach, Johann Christoph"
-        },
-        {
-          "id": "C152",
-          "nome": "Bach, Johann Michael"
-        },
-        {
-          "id": "C284",
-          "nome": "Bernardo Pasquini"
-        },
-        {
-          "id": "C292",
-          "nome": "Biber, Heinrich Ignaz Franz"
-        },
-        {
-          "id": "C318",
-          "nome": "Boyvin, Jacques"
-        },
-        {
-          "id": "C202",
-          "nome": "Bull, John"
-        },
-        {
-          "id": "C272",
-          "nome": "Cabanilles, Juan Bautista"
-        },
-        {
-          "id": "C122",
-          "nome": "Carissimi, Giacomo"
-        },
-        {
-          "id": "C138",
-          "nome": "Cavalieri, Emilio de'"
-        },
-        {
-          "id": "C120",
-          "nome": "Cavalli, Francesco"
-        },
-        {
-          "id": "C116",
-          "nome": "Cesti, Antonio"
-        },
-        {
-          "id": "C124",
-          "nome": "Cristofaro Caresana"
-        },
-        {
-          "id": "C2",
-          "nome": "Dieterich Buxtehude"
-        },
-        {
-          "id": "C268",
-          "nome": "Diogo Dias Melgas"
-        },
-        {
-          "id": "C226",
-          "nome": "Duarte Lobo"
-        },
-        {
-          "id": "C230",
-          "nome": "Duarte Lôbo"
-        },
-        {
-          "id": "C130",
-          "nome": "Elisabeth Sophie of Mecklenburg"
-        },
-        {
-          "id": "C174",
-          "nome": "Esteban Lopez Morago"
-        },
-        {
-          "id": "C68",
-          "nome": "Estevao de Brito"
-        },
-        {
-          "id": "C234",
-          "nome": "Ferdinand Iii, Holy Roman Emperor"
-        },
-        {
-          "id": "C302",
-          "nome": "Fernandes, Gaspar"
-        },
-        {
-          "id": "C126",
-          "nome": "Filipe De Magalhaes"
-        },
-        {
-          "id": "C162",
-          "nome": "Frescobaldi, Girolamo"
-        },
-        {
-          "id": "C108",
-          "nome": "Froberger, Johann Jakob"
-        },
-        {
-          "id": "C114",
-          "nome": "Gibbons, Orlando"
-        },
-        {
-          "id": "C266",
-          "nome": "Giovanni Battista Vitali"
-        },
-        {
-          "id": "C4",
-          "nome": "Giovanni Gabrieli"
-        },
-        {
-          "id": "C310",
-          "nome": "Giovanni Legrenzi"
-        },
-        {
-          "id": "C208",
-          "nome": "Giulio Caccini"
-        },
-        {
-          "id": "C60",
-          "nome": "Gregor Aichinger"
-        },
-        {
-          "id": "C62",
-          "nome": "Gregorio Allegri"
-        },
-        {
-          "id": "C222",
-          "nome": "Hans Leo Haßler"
-        },
-        {
-          "id": "C44",
-          "nome": "Heinrich Scheidemann"
-        },
-        {
-          "id": "C30",
-          "nome": "Jan Pieterszoon Sweelinck"
-        },
-        {
-          "id": "C72",
-          "nome": "Johann Hermann Schein"
-        },
-        {
-          "id": "C154",
-          "nome": "Johann Schop"
-        },
-        {
-          "id": "C182",
-          "nome": "John 04 Of Portugal"
-        },
-        {
-          "id": "C280",
-          "nome": "John Dowland"
-        },
-        {
-          "id": "C180",
-          "nome": "John IV"
-        },
-        {
-          "id": "C240",
-          "nome": "Leopold I"
-        },
-        {
-          "id": "C38",
-          "nome": "Louis Couperin"
-        },
-        {
-          "id": "C304",
-          "nome": "Luigi de Rossi"
-        },
-        {
-          "id": "C236",
-          "nome": "Lully, Jean-Baptiste"
-        },
-        {
-          "id": "C228",
-          "nome": "Lôbo, Duarte"
-        },
-        {
-          "id": "C80",
-          "nome": "Machado, Manuel"
-        },
-        {
-          "id": "C194",
-          "nome": "Madre De Deus, Filpe Da"
-        },
-        {
-          "id": "C308",
-          "nome": "Manuel Cardoso"
-        },
-        {
-          "id": "C112",
-          "nome": "Manuel Correia"
-        },
-        {
-          "id": "C260",
-          "nome": "Manuel Rodriguez Coelho"
-        },
-        {
-          "id": "C10",
-          "nome": "Marc-Antoine Charpentier"
-        },
-        {
-          "id": "C144",
-          "nome": "Maurice, Landgrave of Hesse-Kassel"
-        },
-        {
-          "id": "C136",
-          "nome": "Melchior Schildt"
-        },
-        {
-          "id": "C250",
-          "nome": "Michael Praetorius"
-        },
-        {
-          "id": "C184",
-          "nome": "Monsieur de Sainte-Colombe"
-        },
-        {
-          "id": "C52",
-          "nome": "Monteverdi, Claudio"
-        },
-        {
-          "id": "C150",
-          "nome": "Nivers, Guillaume-Gabriel"
-        },
-        {
-          "id": "C100",
-          "nome": "Paolo Agostino"
-        },
-        {
-          "id": "C92",
-          "nome": "Pedro de Araujo"
-        },
-        {
-          "id": "C12",
-          "nome": "Peri, Jacopo"
-        },
-        {
-          "id": "C252",
-          "nome": "Peter Philips"
-        },
-        {
-          "id": "C220",
-          "nome": "Pierre Beauchamp"
-        },
-        {
-          "id": "C186",
-          "nome": "Pietro Della Valle"
-        },
-        {
-          "id": "C210",
-          "nome": "Reincken, Johann Adam"
-        },
-        {
-          "id": "C176",
-          "nome": "Robert Cambert"
-        },
-        {
-          "id": "C140",
-          "nome": "Samuel Scheidt"
-        },
-        {
-          "id": "C248",
-          "nome": "Sanz, Gaspar"
-        },
-        {
-          "id": "C84",
-          "nome": "Stefano Landi"
-        },
-        {
-          "id": "C158",
-          "nome": "Strozzi, Barbara"
-        },
-        {
-          "id": "C22",
-          "nome": "Thomas Campion"
-        },
-        {
-          "id": "C262",
-          "nome": "Thomas Weelkes"
-        },
-        {
-          "id": "C36",
-          "nome": "Titelouze, Jean"
-        },
-        {
-          "id": "C316",
-          "nome": "Viadana, Lodovico Grossi da"
-        },
-        {
-          "id": "C74",
-          "nome": "Wilbye, John"
-        }
+        "C206",
+        "C192",
+        "C242",
+        "C244",
+        "C88",
+        "C128",
+        "C152",
+        "C284",
+        "C292",
+        "C318",
+        "C202",
+        "C272",
+        "C122",
+        "C138",
+        "C120",
+        "C116",
+        "C124",
+        "C2",
+        "C268",
+        "C226",
+        "C230",
+        "C130",
+        "C174",
+        "C68",
+        "C234",
+        "C302",
+        "C126",
+        "C162",
+        "C108",
+        "C114",
+        "C266",
+        "C4",
+        "C310",
+        "C208",
+        "C60",
+        "C62",
+        "C222",
+        "C44",
+        "C30",
+        "C72",
+        "C154",
+        "C182",
+        "C18",
+        "C280",
+        "C180",
+        "C240",
+        "C38",
+        "C304",
+        "C236",
+        "C228",
+        "C80",
+        "C194",
+        "C308",
+        "C112",
+        "C260",
+        "C10",
+        "C144",
+        "C136",
+        "C250",
+        "C184",
+        "C52",
+        "C150",
+        "C100",
+        "C92",
+        "C12",
+        "C252",
+        "C220",
+        "C186",
+        "C210",
+        "C176",
+        "C140",
+        "C248",
+        "C84",
+        "C158",
+        "C22",
+        "C262",
+        "C36",
+        "C316",
+        "C74"
       ]
     },
     {
-      "id": "P3",
-      "periodo": "Moderno",
-      "compositores": [
-        {
-          "id": "C18",
-          "nome": "Marlos Nobre de Almeida"
-        },
-        {
-          "id": "C185",
-          "nome": "Claude Debussy"
-        },
-        {
-          "id": "C55",
-          "nome": "Maurice Joseph Ravel"
-        }
-      ]
-    },
-    {
-      "id": "P4",
-      "periodo": "Serialista",
-      "compositores": [
-        {
-          "id": "C92",
-          "nome": "Karlheinz Stockhausen"
-        },
-        {
-          "id": "C95",
-          "nome": "Pierre Boulez"
-        }
-      ]
+      "id": "b66d",
+      "nome": "WGwg"
     }
   ]
 }

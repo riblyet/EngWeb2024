@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    .w3-card-4
+    header.w3-container.w3-cyan
+        h1= title
+    .w3-container
+        ul.w3-ul.w3-card-4
+            li ID: #{compositor.id}
+            li Nome: #{compositor.nome}
+            li Bio: #{compositor.bio}
+            li Data de Nascimento: #{compositor.dataNasc}
+            li Data de Obito: #{compositor.dataObito}
+            li Periodo: #{compositor.periodo}
+    footer.w3-container.w3-cyan
+        address Generated in EngWeb2024 in #{data}
+        a(href="/compositores") Voltar

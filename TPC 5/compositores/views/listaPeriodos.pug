@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    .w3-card-4
+    header.w3-container.w3-cyan
+        h1= title
+    .w3-container
+        table.w3-table-all
+            tr
+                th ID 
+                th Periodo
+                th Ações
+            each comp in lista
+                tr
+                    td
+                        a(href="/periodos/" + comp.id) #{comp.id}
+                    td=comp.periodo
+                    td
+                        a.w3-button.w3-blue(href="periodos/edit/" + comp.id) Editar 
+                        a.w3-button.w3-red(href="periodos/delete/" + comp.id) Apagar
+    footer.w3-container.w3-cyan
+        address Generated in EngWeb2024 in #{data}
+        a(href="/") Voltar   
+
